@@ -1,0 +1,82 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-prototype"
+version = "0.1.0"
+description = "Local RAG question answering over PDFs and markdown, measured stage by stage, on one laptop at zero cost."
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9,<2",
+    "ollama>=0.6.3,<0.7",
+    "pypdf>=6.21.3,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy==2.4.0",
+    "pytest==9.1.1",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W", "F",      # pycodestyle and pyflakes
+    "I",                # import order
+    "B",                # likely bugs
+    "UP",               # modern syntax for Python 3.12
+    "SIM", "C4", "RET", "PIE", "PERF",  # simpler, faster code
+    "RUF",              # ruff-specific checks
+    "N",                # naming
+    "BLE",              # no blind `except Exception`
+    "S",                # security, including `except: pass` (S110)
+    "PT",               # pytest style
+    "PTH",              # pathlib instead of os.path
+    "DTZ",              # no timezone-naive datetimes
+    "ARG",              # unused arguments
+    "LOG", "G",         # logging hygiene
+    "T20",              # no print() outside the CLI
+    "ERA",              # no commented-out code
+    "TID",              # no relative imports
+    "PLE", "PLW",       # pylint errors and warnings
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "ARG"]  # asserts and unused fixture arguments are normal in tests
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+files = ["src", "tests"]
+mypy_path = "src"
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers", "--strict-config", "-m", "not integration"]
+markers = ["integration: needs a running Ollama server with the configured models"]
+filterwarnings = ["error"]
+xfail_strict = true
+
+[tool.coverage.run]
+source = ["rag"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+exclude_also = ['^\s*\.\.\.$']
