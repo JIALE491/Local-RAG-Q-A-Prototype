@@ -54,10 +54,12 @@ Tested on a MacBook Air M2 with 8 GB of memory, running macOS.
    ollama pull llama3.2:3b
    ```
 
-3. In a clone of this repository, create the virtual environment and install the package
-   with its development tools:
+3. Clone this repository, then create the virtual environment and install the package with
+   its development tools:
 
    ```
+   git clone https://github.com/JIALE491/Local-RAG-Q-A-Prototype.git
+   cd Local-RAG-Q-A-Prototype
    python3.12 -m venv .venv
    make install
    source .venv/bin/activate
@@ -86,6 +88,51 @@ Settings are in [`config.toml`](config.toml): folders, models, chunking strategi
 many chunks the model gets. Every key is required and unknown keys are rejected, so a typo
 fails loudly. Expected failures print an `error:` line and a `hint:` line, never a stack
 trace.
+
+## Use your own documents
+
+Nothing in the pipeline is specific to the sample company: it answers from any folder of PDF
+and markdown files. Keep your settings, index and results in a folder of your own, outside
+the repository, so the sample results stay as published and your documents' text never
+ends up in a commit.
+
+1. Copy the settings into a new folder:
+
+   ```
+   mkdir -p ~/rag-data
+   cp config.toml ~/rag-data/config.toml
+   ```
+
+2. In `~/rag-data/config.toml`, point `docs_dir` at your documents, for example
+   `docs_dir = "~/my-documents"`. Relative paths are resolved from the folder that holds
+   the config file, so the index and results go to `~/rag-data/index` and
+   `~/rag-data/results`.
+
+3. Build the index from your documents, then ask:
+
+   ```
+   rag --config ~/rag-data/config.toml ingest
+   rag --config ~/rag-data/config.toml ask "your question"
+   ```
+
+What your documents need:
+
+- **PDF or markdown files.** Other files are skipped and listed. A scanned PDF, which has no
+  text layer, or an encrypted PDF stops the ingest with an error naming the file: there is
+  no OCR.
+- **Unique file names**, even in different subfolders, because sources are shown by file
+  name.
+- **Bookmarks or headings, for section labels.** Markdown headings become sections. A PDF
+  needs bookmarks; Word adds them when you export to PDF with "Create bookmarks using
+  headings". Without them, a PDF's sources show the page only.
+- **Sections of moderate length.** If the chunks given to the model are too long for its
+  context, `rag ask` stops with an error instead of cutting the prompt; `-k 3` gives the
+  model fewer chunks.
+
+To measure retrieval and answers on your documents too, write a `questions.csv` and a
+`facts.csv` in the format described in [`data/README.md`](data/README.md), and set
+`questions_csv` and `facts_csv` in your config to their paths. `rag eval`, `rag answer-all`
+and `rag grades` then work as they do for the sample set.
 
 ## Architecture
 
@@ -129,6 +176,11 @@ The test set in [`data/eval/`](data/eval) has 50 questions that one document ans
 per document), 5 that no document answers, and the 78 facts the expected answers rely on.
 The questions were written together with the documents, by the same author (decision 31),
 so they are an easier test than questions written independently.
+
+All results were measured on a MacBook Air M2 (8 GB) with Python 3.12.12, Ollama 0.34.2,
+chromadb 1.5.9 and pypdf 6.21.3, using `nomic-embed-text` (ID `0a109f422b47` in
+`ollama list`) and `llama3.2:3b` (ID `a80c4f17acd5`). A model tag can be updated upstream;
+the IDs identify the exact models used.
 
 ### Retrieval: three chunking strategies
 
