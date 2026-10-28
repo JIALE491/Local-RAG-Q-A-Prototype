@@ -1,0 +1,997 @@
+id,question,expected_doc,expected_answer,answer,supported,correct,cited,error,prompt,all_facts_given,prompt_tokens,answer_tokens,seconds,model,strategy,top_k
+q01,Does the company add anything if I put part of my paycheck aside for when I retire?,benefits-overview.pdf,"Yes. It matches 100% of the first 4% of pay you contribute; you can join after 60 days, and the match vests over 3 years.","If you put part of your paycheck aside for retirement, the company will match 100% of the first 4% of pay that you contribute to the 401(k) plan. [1]",yes,yes,"[1] benefits-overview.pdf, p. 1",,"Sources:
+
+[1] benefits-overview.pdf, p. 1
+Dental and vision The company pays 100% of the premium for employee-only dental and vision coverage. You pay the difference for dependent coverage. Saving for retirement You can join the 401(k) plan after 60 days of employment. The company matches 100% of the first 4% of pay that you contribute. Company matching contributions vest over 3 years, one third each year; your own contributions are always yours.
+
+[2] parental-leave-policy.pdf, p. 1 (Pay and benefits during leave)
+Pay and benefits during leave Your full base pay continues through payroll during paid leave. Health, dental and vision coverage continue on the same terms, and you keep earning vacation and sick leave while you are away.
+
+[3] travel-and-expense-policy.pdf, p. 1 (Scope)
+Scope This policy covers business travel and work expenses for all employees. Spend company money as carefully as you would your own. When something is not covered here, ask Finance before you spend, not after.
+
+[4] remote-work-policy.md (Can I work fully remotely?)
+Can I work fully remotely? Fully remote work is an exception. It needs approval from your department's vice president and the People Team, and it is reviewed every year. Fully remote employees come to the head office at least once a quarter, with travel paid under the Travel and Expense Policy.
+
+[5] company-overview-faq.md (What is the company's mission?)
+What is the company's mission? Get more people outside, with gear that lasts. In practice that means repairing before replacing, renting gear to people who are just starting out, and giving 1% of annual revenue to trail and river conservation groups.
+
+Question: Does the company add anything if I put part of my paycheck aside for when I retire?",yes,493,41,3.2,llama3.2:3b,sections-4000,5
+q02,"If I have to stop working for medical reasons late in my pregnancy, how much of my salary is paid?",benefits-overview.pdf,"Short-term disability pays 60% of your pay for up to 12 weeks, after a 7-day waiting period, at no cost to you.","For medical reasons before the birth, short-term disability covers 60% of your pay for up to 12 weeks, starting after a 7-day waiting period, at no cost to you [1].",yes,yes,"[1] parental-leave-policy.pdf, p. 1 (Before the birth)",,"Sources:
+
+[1] parental-leave-policy.pdf, p. 1 (Before the birth)
+Before the birth Time off for medical reasons before a birth, such as doctor-ordered bed rest, is covered by short-term disability rather than by this policy, and it does not reduce your parental leave. The Benefits Overview explains short-term disability.
+
+[2] parental-leave-policy.pdf, p. 1 (Pay and benefits during leave)
+Pay and benefits during leave Your full base pay continues through payroll during paid leave. Health, dental and vision coverage continue on the same terms, and you keep earning vacation and sick leave while you are away.
+
+[3] parental-leave-policy.pdf, p. 1 (Phased return to work)
+Phased return to work After primary caregiver leave, you can return on a reduced schedule of 60% of your usual hours for up to 4 weeks, at full pay. Agree on the schedule with your manager before your leave ends. Tallowmere Outfitters - Parental Leave Policy - Page 1 of 2
+
+[4] parental-leave-policy.pdf, p. 1 (Eligibility)
+Eligibility Full-time employees, and part-time employees scheduled for 20 or more hours a week, are eligible after 6 months of continuous employment. Employees who are not yet eligible when their child arrives become eligible when they reach 6 months, and can take their leave then, within the time limit below.
+
+[5] benefits-overview.pdf, p. 1 (Insurance)
+Insurance - Life insurance: coverage of 1 times your annual salary, at no cost to you. You can buy more for yourself and your family. - Short-term disability: 60% of your pay for up to 12 weeks, starting after a 7-day waiting period, at no cost to you. - Long-term disability: 60% of your pay, starting after 90 days of disability, at no cost to you.
+
+Question: If I have to stop working for medical reasons late in my pregnancy, how much of my salary is paid?",yes,540,42,2.8,llama3.2:3b,sections-4000,5
+q03,How big is the staff discount on the company's own brand of gear?,benefits-overview.pdf,40% off Tallowmere Trail products (30% off other regular-price merchandise).,"The staff discount on the company's own brand of gear, Tallowmere Trail, is 40% off [1].",yes,yes,"[1] benefits-overview.pdf, p. 1 (Employee discount)",,"Sources:
+
+[1] benefits-overview.pdf, p. 1 (Employee discount)
+Employee discount From your first day, you get 30% off regular-price merchandise and 40% off Tallowmere Trail products, in stores and online. The discount does not apply to gift cards, rentals or items already on sale, and it is capped at $3,000 of retail value per calendar year. It is for you and your household only.
+
+[2] company-overview-faq.md (What does the company sell?)
+What does the company sell? We sell camping, hiking and paddling gear online and in our stores. About a third of sales come from our own brand, Tallowmere Trail, which covers backpacks, tents, sleeping bags and rain shells. We also rent gear at two of our stores; see the Gear Rental FAQ.
+
+[3] remote-work-policy.md (What equipment and allowances do I get?)
+What equipment and allowances do I get? - A company laptop, monitor and headset. - A one-time home office stipend of $500 for things like a desk chair or a second monitor, available after 90 days of employment. - An internet allowance of $40 per month, paid through payroll. Equipment remains company property and must be returned within 10 days of your last day.
+
+[4] loyalty-program-terms.pdf, p. 1 (Membership tiers)
+Membership tiers Tiers are based on what you spend in a calendar year: - Base: every member, from the day they join - Ridge: $500 or more in a year. Free standard shipping on every order, with no minimum. - Summit: $1,500 or more in a year. Free expedited shipping, early access to sales, and an extended return window (see the Returns and Refunds Policy). When you reach a tier, you keep it for the rest of that year and all of the following year.
+
+[5] benefits-overview.pdf, p. 1 (Wellness stipend)
+Wellness stipend Every employee gets $300 a year for things that keep them active, such as a gym membership, race entry fees or fitness classes. Claim it through the expense app by December 15; unused amounts do Tallowmere Outfitters - Benefits Overview 2026 - Page 1 of 2
+
+Question: How big is the staff discount on the company's own brand of gear?",yes,605,26,2.4,llama3.2:3b,sections-4000,5
+q04,A supplier wants to send me an expensive bottle of wine for the holidays. Is there a limit on what I can accept?,code-of-conduct.pdf,Gifts from any one supplier may total up to $75 in a calendar year; decline anything worth more or report it to the Ethics team.,"According to the Code of Conduct, you can accept gifts worth up to $75 in total from any one supplier in a calendar year, but never accept cash, gift cards, or anything offered in exchange for a decision. [5]",yes,yes,"[5] code-of-conduct.pdf, p. 1",,"Sources:
+
+[1] returns-and-refunds-policy.pdf, p. 2 (Holiday returns)
+Holiday returns Items bought between November 1 and December 24 can be returned until January 31 of the following year, even when the usual 45-day window would end earlier. The holiday window never shortens the 90-day window for Summit members.
+
+[2] travel-and-expense-policy.pdf, p. 1 (Hotels)
+Hotels The nightly limit, before taxes, is $210 in most cities and $290 in high-cost cities: New York, San Francisco, Boston, Seattle and Washington, DC. When you attend a conference, stay in the conference hotel even if it costs more than the limit.
+
+[3] travel-and-expense-policy.pdf, p. 2 (Company cards)
+Company cards Employees who travel 4 or more times a year can get a company credit card. The card is for business expenses only, and any personal charge must be repaid within 30 days.
+
+[4] returns-and-refunds-policy.pdf, p. 2 (Returns without a receipt)
+Returns without a receipt Without a receipt or order number, we offer store credit for the lowest price the item sold for in the last 60 days. A government photo ID is required, and each customer can make up to 3 returns without a receipt in any 12-month period.
+
+[5] code-of-conduct.pdf, p. 1
+Code of Conduct Tallowmere Outfitters | Legal and Ethics | Effective March 15, 2021 Why we have a code Our customers trust us to give honest advice, and we trust each other to do the right thing when no one is watching. This code describes what that means in practice. It applies to every employee, and to contractors and temporary staff while they work with us. Respect at work We do not tolerate harassment, bullying or discrimination based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status or any other protected characteristic. This applies at our sites, at company events, on business trips and online. Conflicts of interest Avoid situations where your personal interests could influence your decisions at work. Tell your manager and the Ethics team about: - A second job with a competitor, supplier or customer of Tallowmere Outfitters - A financial interest of more than 1% in a competitor or supplier - A family member or partner in your reporting line, or working for a supplier you deal with Disclosing a conflict is not wrongdoing. Hiding one is. Gifts and entertainment You can accept gifts worth up to $75 in total from any one supplier in a calendar year. Never accept cash, gift cards, or anything offered in exchange for a decision. Business meals are fine when there is a business purpose and they are not lavish. If you are offered something worth more than $75, decline it or report it to the Ethics team, who decide whether it can be kept, donated or returned. Supplier pro deals Many brands offer our employees discounted pro deals. You can use them for gear for yourself and your household. Reselling gear bought through a pro deal is not allowed. Protecting information Use customer and employee information only for the job you are doing, and never share it outside the company. Do not discuss unannounced products, sales results or company plans with anyone outside the company. Social media You may say that you work here, but do not speak on behalf of the company unless Communications has asked you to. Never post customer information, or photos of customers without their permission. Tallowmere Outfitters - Code of Conduct - Page 1 of 2
+
+Question: A supplier wants to send me an expensive bottle of wine for the holidays. Is there a limit on what I can accept?",yes,889,48,4.1,llama3.2:3b,sections-4000,5
+q05,Can I report something shady at work without giving my name?,code-of-conduct.pdf,"Yes. Reports to the Ethics Line, run by an independent company 24 hours a day at (360) 555-0199 or by web form, can be anonymous.","You can report something shady at work anonymously through the Ethics Line, which is an independent company that runs 24 hours a day at (360) 555-0199 and through a web form [2].",yes,yes,"[2] code-of-conduct.pdf, p. 2",,"Sources:
+
+[1] it-security-policy.pdf, p. 2 (Reporting security incidents)
+Reporting security incidents Report anything that might be a security incident to security@tallowmere.example or to the security on-call phone at extension 4911, which is answered 24 hours a day.
+
+[2] code-of-conduct.pdf, p. 2
+Raising concerns If you see something that may break this code or the law, talk to your manager, the People Team or the Ethics team. You can also use the Ethics Line, which an independent company runs 24 hours a day at (360) 555-0199 and through a web form. Reports to the Ethics Line can be anonymous. The Ethics team starts looking into every report within 5 business days. No retaliation We do not tolerate retaliation against anyone who raises a concern in good faith or helps with an investigation. Retaliation is itself a serious breach of this code. Breaking the code Breaking this code can lead to disciplinary action, up to and including termination of employment, and in some cases to legal action. Yearly acknowledgment Every employee reads this code and confirms it in the Waypoint HR portal when they join, and again by January 31 every year. Tallowmere Outfitters - Code of Conduct - Page 2 of 2
+
+[3] it-security-policy.pdf, p. 1 (Phishing)
+Phishing Report suspicious emails with the Report Phishing button in your email. Never sign in through a link in an email; go to the site directly instead. If you clicked a link or entered your password, tell IT immediately. Nobody gets in trouble for reporting a mistake.
+
+[4] remote-work-policy.md (What are the rules for working in public places?)
+What are the rules for working in public places? Use the company VPN on any network that is not your home or the office, and keep customer and employee data off screens that others can see. The IT Security Policy has the full rules.
+
+[5] workplace-safety-and-incident-reporting.pdf, p. 1 (Reporting injuries and near misses)
+Reporting injuries and near misses Report every injury, however small, and every near miss within 24 hours, using the incident form in the Waypoint HR portal or the paper form kept with each first aid kit. For a serious injury, call 911 first, then tell the manager on duty right away. Reports help us fix hazards before someone else gets hurt, and no one is ever disciplined for reporting.
+
+Question: Can I report something shady at work without giving my name?",yes,638,43,3.2,llama3.2:3b,sections-4000,5
+q06,Am I allowed to sell gear I bought cheaply through a brand's staff program?,code-of-conduct.pdf,No. Pro-deal gear is for you and your household only; reselling it is not allowed.,"No, reselling gear bought through a pro deal is not allowed. [5]",yes,yes,"[5] returns-and-refunds-policy.pdf, p. 1 (Overview)",,"Sources:
+
+[1] company-overview-faq.md (What does the company sell?)
+What does the company sell? We sell camping, hiking and paddling gear online and in our stores. About a third of sales come from our own brand, Tallowmere Trail, which covers backpacks, tents, sleeping bags and rain shells. We also rent gear at two of our stores; see the Gear Rental FAQ.
+
+[2] benefits-overview.pdf, p. 1 (Employee discount)
+Employee discount From your first day, you get 30% off regular-price merchandise and 40% off Tallowmere Trail products, in stores and online. The discount does not apply to gift cards, rentals or items already on sale, and it is capped at $3,000 of retail value per calendar year. It is for you and your household only.
+
+[3] code-of-conduct.pdf, p. 1
+Code of Conduct Tallowmere Outfitters | Legal and Ethics | Effective March 15, 2021 Why we have a code Our customers trust us to give honest advice, and we trust each other to do the right thing when no one is watching. This code describes what that means in practice. It applies to every employee, and to contractors and temporary staff while they work with us. Respect at work We do not tolerate harassment, bullying or discrimination based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status or any other protected characteristic. This applies at our sites, at company events, on business trips and online. Conflicts of interest Avoid situations where your personal interests could influence your decisions at work. Tell your manager and the Ethics team about: - A second job with a competitor, supplier or customer of Tallowmere Outfitters - A financial interest of more than 1% in a competitor or supplier - A family member or partner in your reporting line, or working for a supplier you deal with Disclosing a conflict is not wrongdoing. Hiding one is. Gifts and entertainment You can accept gifts worth up to $75 in total from any one supplier in a calendar year. Never accept cash, gift cards, or anything offered in exchange for a decision. Business meals are fine when there is a business purpose and they are not lavish. If you are offered something worth more than $75, decline it or report it to the Ethics team, who decide whether it can be kept, donated or returned. Supplier pro deals Many brands offer our employees discounted pro deals. You can use them for gear for yourself and your household. Reselling gear bought through a pro deal is not allowed. Protecting information Use customer and employee information only for the job you are doing, and never share it outside the company. Do not discuss unannounced products, sales results or company plans with anyone outside the company. Social media You may say that you work here, but do not speak on behalf of the company unless Communications has asked you to. Never post customer information, or photos of customers without their permission. Tallowmere Outfitters - Code of Conduct - Page 1 of 2
+
+[4] workplace-safety-and-incident-reporting.pdf, p. 1 (Forklifts and powered equipment)
+Forklifts and powered equipment Only certified operators may use forklifts and powered pallet jacks at the distribution center. Certification includes a practical test and must be renewed every 3 years. Inspect the equipment before every shift, and take it out of service if anything is wrong.
+
+[5] returns-and-refunds-policy.pdf, p. 1 (Overview)
+Overview This policy explains how customers return or exchange items bought from Tallowmere Outfitters in our stores or online, and how and when refunds are paid. It applies to all three stores and to orders shipped from our distribution center. Gear rentals have their own terms in the Gear Rental FAQ.
+
+Question: Am I allowed to sell gear I bought cheaply through a brand's staff program?",yes,934,18,3.2,llama3.2:3b,sections-4000,5
+q07,Which of your three stores opened most recently?,company-overview-faq.md,"Ashcombe Junction, which opened in 2021.","The Ashcombe Junction store opened most recently, in 2021. [1][2]",yes,yes,"[1] company-overview-faq.md (Where are the stores?)
+[2] company-overview-faq.md (What are the store hours?)",,"Sources:
+
+[1] company-overview-faq.md (Where are the stores?)
+Where are the stores? | Store | Opened | Address | |---|---|---| | Harrow Bay (flagship) | 2011 | 18 Harbor Row, Harrow Bay | | Brindle Point | 2016 | 2250 Ridgeway Avenue, Brindle Point | | Ashcombe Junction | 2021 | 7 Depot Lane, Ashcombe Junction | Online orders ship from the Fenwick Yard distribution center, which opened in 2019. The head office is at 400 Quarry Street, Harrow Bay.
+
+[2] company-overview-faq.md (What are the store hours?)
+What are the store hours? All three stores are open from 9 a.m. to 8 p.m. Monday through Saturday, and from 10 a.m. to 6 p.m. on Sunday. Stores close at 4 p.m. on Christmas Eve, and are closed on Thanksgiving Day, Christmas Day and New Year's Day.
+
+[3] store-opening-and-closing-procedures.md (Store Opening and Closing Procedures)
+Store Opening and Closing Procedures These steps apply to all three stores. Following them every day keeps people, cash and inventory safe.
+
+[4] store-opening-and-closing-procedures.md (Opening the store > Who opens?)
+Who opens? Two employees open together, arriving 45 minutes before opening time, and one of them must be a manager or key holder. Never open alone: if your partner is late, wait in your car and call the store manager.
+
+[5] gear-rental-faq.md (Gear Rental FAQ)
+Gear Rental FAQ Renting is the easiest way to try a new activity before you buy. Rentals are available at our Harrow Bay and Brindle Point stores; the Ashcombe Junction store does not offer rentals.
+
+Question: Which of your three stores opened most recently?",yes,508,20,2.0,llama3.2:3b,sections-4000,5
+q08,Are your shops open on Thanksgiving?,company-overview-faq.md,"No. All stores are closed on Thanksgiving Day, as well as Christmas Day and New Year's Day.","Yes, the stores are closed on Thanksgiving Day. [1]",no,partial,[1] company-overview-faq.md (What are the store hours?),,"Sources:
+
+[1] company-overview-faq.md (What are the store hours?)
+What are the store hours? All three stores are open from 9 a.m. to 8 p.m. Monday through Saturday, and from 10 a.m. to 6 p.m. on Sunday. Stores close at 4 p.m. on Christmas Eve, and are closed on Thanksgiving Day, Christmas Day and New Year's Day.
+
+[2] employee-handbook-time-off.md (Company holidays)
+Company holidays We observe 10 paid holidays: New Year's Day, Martin Luther King Jr. Day, Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day, the day after Thanksgiving, Christmas Eve (half day) and Christmas Day. Store employees who work on a company holiday are paid 1.5 times their regular rate for the hours worked.
+
+[3] returns-and-refunds-policy.pdf, p. 2 (Holiday returns)
+Holiday returns Items bought between November 1 and December 24 can be returned until January 31 of the following year, even when the usual 45-day window would end earlier. The holiday window never shortens the 90-day window for Summit members.
+
+[4] employee-handbook-time-off.md (Vacation > Are there times I can't take vacation?)
+Are there times I can't take vacation? Store and distribution center employees cannot take vacation between November 20 and January 2, our busiest season, unless their general manager approves an exception. Head office employees have no blackout period.
+
+[5] store-opening-and-closing-procedures.md (Store Opening and Closing Procedures)
+Store Opening and Closing Procedures These steps apply to all three stores. Following them every day keeps people, cash and inventory safe.
+
+Question: Are your shops open on Thanksgiving?",yes,479,14,1.7,llama3.2:3b,sections-4000,5
+q09,"If I ask you to erase my personal information, how long will that take?",data-retention-policy.pdf,"Within 30 days, after the customer's identity is confirmed; order records needed for tax are kept until their retention period ends.","According to the Data Retention Policy, if a customer requests to delete their personal data, the company will confirm the person's identity first, then complete the deletion within 30 days [1].",yes,yes,"[1] data-retention-policy.pdf, p. 1",,"Sources:
+
+[1] data-retention-policy.pdf, p. 1
+Data Retention Policy Tallowmere Outfitters | Legal and Ethics | Effective April 25, 2022 Why we keep and delete data We keep information only as long as we need it for the business or the law requires it, and then we delete it securely. Keeping data longer than necessary increases the harm if it is ever exposed. Retention periods The list below shows how long we keep the main types of records, and when each period starts. - Customer order and payment records: 7 years from the order date - Customer accounts with no activity: deleted 3 years after the last sign-in or purchase - Marketing email consent records: while the customer is subscribed, plus 2 years - Store security camera footage: 30 days, unless it is needed for an incident - Applications from people we did not hire: 1 year after the position closes, or 2 years if the applicant agreed to join our talent pool - Employee personnel files and payroll records: 7 years after employment ends - Email: 3 years from the date it was sent or received - System backups: 35 days Payment card numbers We never store full card numbers. Our payment provider replaces them with tokens at the point of sale and at checkout, so card numbers never reach our own systems. Customer requests to delete data Customers can ask us to delete their personal data through the privacy form on our website or by calling customer service. We confirm the person's identity first, then complete the deletion within 30 days. Order records that we must keep for tax purposes are kept until their retention period ends, but they are removed from marketing lists and customer profiles. Legal holds When a lawsuit, investigation or audit is expected, Legal can place a hold on related records. A legal hold overrides every retention period in this policy until Legal lifts it. Employees are told when records they manage are under a hold. Secure deletion Paper records are shredded on site. Laptops and storage devices are wiped to industry standards before they are reused, or physically destroyed by a certified vendor. Tallowmere Outfitters - Data Retention Policy - Page 1 of 2
+
+[2] it-security-policy.pdf, p. 1 (Laptops and phones)
+Laptops and phones - Company laptops have full-disk encryption, which must stay on. - Screens lock automatically after 5 minutes without activity; lock yours whenever you step away. - Install operating system updates within 14 days of release, and critical security patches within 72 hours. - You can read work email on a personal phone only through the managed email app.
+
+[3] it-security-policy.pdf, p. 1 (Lost or stolen devices)
+Lost or stolen devices Report a lost or stolen laptop, phone or security key to the IT Help Desk within 1 hour of noticing, at any time of day. IT can lock and erase the device remotely.
+
+[4] it-helpdesk-faq.md (How do I reset my password?)
+How do I reset my password? Use ""Forgot password"" on the sign-in page and confirm with your authenticator app. After 10 failed sign-in attempts your account locks for 30 minutes and then unlocks automatically; the help desk can unlock it sooner.
+
+[5] performance-review-process.md (What if I disagree with my review?)
+What if I disagree with my review? You can add a written response to your review within 10 business days of the meeting. If you still disagree, ask the People Team to mediate a conversation with your manager.
+
+Question: If I ask you to erase my personal information, how long will that take?",yes,857,40,3.6,llama3.2:3b,sections-4000,5
+q10,How long do the stores keep their security camera recordings?,data-retention-policy.pdf,"30 days, unless the footage is needed for an incident.","The stores keep their security camera footage for 30 days, unless it is needed for an incident [1].",yes,yes,"[1] data-retention-policy.pdf, p. 1",,"Sources:
+
+[1] data-retention-policy.pdf, p. 1
+Data Retention Policy Tallowmere Outfitters | Legal and Ethics | Effective April 25, 2022 Why we keep and delete data We keep information only as long as we need it for the business or the law requires it, and then we delete it securely. Keeping data longer than necessary increases the harm if it is ever exposed. Retention periods The list below shows how long we keep the main types of records, and when each period starts. - Customer order and payment records: 7 years from the order date - Customer accounts with no activity: deleted 3 years after the last sign-in or purchase - Marketing email consent records: while the customer is subscribed, plus 2 years - Store security camera footage: 30 days, unless it is needed for an incident - Applications from people we did not hire: 1 year after the position closes, or 2 years if the applicant agreed to join our talent pool - Employee personnel files and payroll records: 7 years after employment ends - Email: 3 years from the date it was sent or received - System backups: 35 days Payment card numbers We never store full card numbers. Our payment provider replaces them with tokens at the point of sale and at checkout, so card numbers never reach our own systems. Customer requests to delete data Customers can ask us to delete their personal data through the privacy form on our website or by calling customer service. We confirm the person's identity first, then complete the deletion within 30 days. Order records that we must keep for tax purposes are kept until their retention period ends, but they are removed from marketing lists and customer profiles. Legal holds When a lawsuit, investigation or audit is expected, Legal can place a hold on related records. A legal hold overrides every retention period in this policy until Legal lifts it. Employees are told when records they manage are under a hold. Secure deletion Paper records are shredded on site. Laptops and storage devices are wiped to industry standards before they are reused, or physically destroyed by a certified vendor. Tallowmere Outfitters - Data Retention Policy - Page 1 of 2
+
+[2] store-opening-and-closing-procedures.md (Closing the store > Closing steps)
+Closing steps 1. Make a final announcement 15 minutes before closing, and lock the doors at closing time once the last customer has left. 2. Two employees count each register together and sign the count sheet. 3. Put cash and checks in the deposit bag. The store safe may hold up to $2,000 overnight; anything above that goes to the bank's night deposit the same evening. 4. Walk the sales floor, fitting rooms and restrooms to make sure no one is left inside. 5. Set the alarm and lock up together, then walk to your cars together.
+
+[3] returns-and-refunds-policy.pdf, p. 2 (Returns without a receipt)
+Returns without a receipt Without a receipt or order number, we offer store credit for the lowest price the item sold for in the last 60 days. A government photo ID is required, and each customer can make up to 3 returns without a receipt in any 12-month period.
+
+[4] it-security-policy.pdf, p. 1 (Laptops and phones)
+Laptops and phones - Company laptops have full-disk encryption, which must stay on. - Screens lock automatically after 5 minutes without activity; lock yours whenever you step away. - Install operating system updates within 14 days of release, and critical security patches within 72 hours. - You can read work email on a personal phone only through the managed email app.
+
+[5] store-opening-and-closing-procedures.md (Opening the store > Opening steps)
+Opening steps 1. Look for signs of a break-in before you unlock. If anything looks wrong, do not go in: call the police, then the on-call store manager. 2. Disarm the alarm with your personal code. Never share alarm codes; the alarm log shows whose code was used. 3. Count each register drawer. Every drawer starts the day with a $200 float. Report any difference over $5 to the store manager. 4. Turn on the lights and sign in to the point-of-sale system. 5. Check the rental desk for reservations due for pickup today. 6. Hold the daily team huddle 20 minutes before opening.
+
+Question: How long do the stores keep their security camera recordings?",yes,1040,23,2.4,llama3.2:3b,sections-4000,5
+q11,I applied for a job and didn't get it. How long will you keep my application?,data-retention-policy.pdf,"1 year after the position closes, or 2 years if you agreed to join the talent pool.","We keep customer application records for 1 year after the position closes, or 2 years if the applicant agreed to join our talent pool [4].",yes,yes,[4] remote-work-policy.md (Can I work from somewhere else for a while?),,"Sources:
+
+[1] parental-leave-policy.pdf, p. 1 (Eligibility)
+Eligibility Full-time employees, and part-time employees scheduled for 20 or more hours a week, are eligible after 6 months of continuous employment. Employees who are not yet eligible when their child arrives become eligible when they reach 6 months, and can take their leave then, within the time limit below.
+
+[2] data-retention-policy.pdf, p. 1
+Data Retention Policy Tallowmere Outfitters | Legal and Ethics | Effective April 25, 2022 Why we keep and delete data We keep information only as long as we need it for the business or the law requires it, and then we delete it securely. Keeping data longer than necessary increases the harm if it is ever exposed. Retention periods The list below shows how long we keep the main types of records, and when each period starts. - Customer order and payment records: 7 years from the order date - Customer accounts with no activity: deleted 3 years after the last sign-in or purchase - Marketing email consent records: while the customer is subscribed, plus 2 years - Store security camera footage: 30 days, unless it is needed for an incident - Applications from people we did not hire: 1 year after the position closes, or 2 years if the applicant agreed to join our talent pool - Employee personnel files and payroll records: 7 years after employment ends - Email: 3 years from the date it was sent or received - System backups: 35 days Payment card numbers We never store full card numbers. Our payment provider replaces them with tokens at the point of sale and at checkout, so card numbers never reach our own systems. Customer requests to delete data Customers can ask us to delete their personal data through the privacy form on our website or by calling customer service. We confirm the person's identity first, then complete the deletion within 30 days. Order records that we must keep for tax purposes are kept until their retention period ends, but they are removed from marketing lists and customer profiles. Legal holds When a lawsuit, investigation or audit is expected, Legal can place a hold on related records. A legal hold overrides every retention period in this policy until Legal lifts it. Employees are told when records they manage are under a hold. Secure deletion Paper records are shredded on site. Laptops and storage devices are wiped to industry standards before they are reused, or physically destroyed by a certified vendor. Tallowmere Outfitters - Data Retention Policy - Page 1 of 2
+
+[3] parental-leave-policy.pdf, p. 1 (Giving notice)
+Giving notice Tell your manager and the People Team at least 30 days before you expect your leave to start, or as soon as you can if the timing is unexpected. Submit the parental leave form in the Waypoint HR portal so that payroll and benefits are updated.
+
+[4] remote-work-policy.md (Can I work from somewhere else for a while?)
+Can I work from somewhere else for a while? Within the United States, you can work from another location for up to 4 weeks per year with your manager's approval. Working from outside the United States is limited to 20 working days per year and needs approval from the People Team and IT at least 3 weeks in advance, because of tax and security rules. Working from countries under US sanctions is never allowed.
+
+[5] benefits-overview.pdf, p. 1
+Dental and vision The company pays 100% of the premium for employee-only dental and vision coverage. You pay the difference for dependent coverage. Saving for retirement You can join the 401(k) plan after 60 days of employment. The company matches 100% of the first 4% of pay that you contribute. Company matching contributions vest over 3 years, one third each year; your own contributions are always yours.
+
+Question: I applied for a job and didn't get it. How long will you keep my application?",yes,932,31,3.5,llama3.2:3b,sections-4000,5
+q12,I've been here six years. How many vacation days do I get a year?,employee-handbook-time-off.md,20 days a year (5 to 9 years of service).,You earn 25 vacation days per year if you have 10 or more years of service. [1],yes,no,[1] employee-handbook-time-off.md (Vacation > How much vacation do I earn?),,"Sources:
+
+[1] employee-handbook-time-off.md (Vacation > How much vacation do I earn?)
+How much vacation do I earn? | Years of service | Vacation days per year | |---|---| | Less than 5 | 15 | | 5 to 9 | 20 | | 10 or more | 25 | Vacation accrues every pay period from your first day, and you can use it as soon as it has accrued.
+
+[2] employee-handbook-time-off.md (Vacation > Can I carry vacation over to next year?)
+Can I carry vacation over to next year? You can carry up to 5 unused vacation days into the next calendar year. Carried-over days must be used by March 31, and any left after that date are forfeited. Unused vacation is not paid out, except where state law requires a payout when employment ends.
+
+[3] employee-handbook-time-off.md (Vacation > How do I request vacation?)
+How do I request vacation? Request vacation in the Waypoint HR portal. For 3 or more consecutive days, submit the request at least 2 weeks ahead. Your manager approves or declines it within 3 business days.
+
+[4] remote-work-policy.md (Can I work from somewhere else for a while?)
+Can I work from somewhere else for a while? Within the United States, you can work from another location for up to 4 weeks per year with your manager's approval. Working from outside the United States is limited to 20 working days per year and needs approval from the People Team and IT at least 3 weeks in advance, because of tax and security rules. Working from countries under US sanctions is never allowed.
+
+[5] employee-handbook-time-off.md (Sick leave)
+Sick leave Everyone gets 10 paid sick days per calendar year, for their own illness or to care for a family member. Sick days do not carry over. We only ask for a doctor's note after 3 or more consecutive sick days.
+
+Question: I've been here six years. How many vacation days do I get a year?",yes,545,23,2.2,llama3.2:3b,sections-4000,5
+q13,I work at one of the stores. Can I take a week off between Christmas and New Year?,employee-handbook-time-off.md,Not normally: store and distribution center employees cannot take vacation between November 20 and January 2 unless their general manager approves an exception.,I don't know. [3] [4],yes,no,none (the model says it doesn't know),,"Sources:
+
+[1] employee-handbook-time-off.md (Company holidays)
+Company holidays We observe 10 paid holidays: New Year's Day, Martin Luther King Jr. Day, Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day, the day after Thanksgiving, Christmas Eve (half day) and Christmas Day. Store employees who work on a company holiday are paid 1.5 times their regular rate for the hours worked.
+
+[2] company-overview-faq.md (What are the store hours?)
+What are the store hours? All three stores are open from 9 a.m. to 8 p.m. Monday through Saturday, and from 10 a.m. to 6 p.m. on Sunday. Stores close at 4 p.m. on Christmas Eve, and are closed on Thanksgiving Day, Christmas Day and New Year's Day.
+
+[3] employee-handbook-time-off.md (Vacation > Are there times I can't take vacation?)
+Are there times I can't take vacation? Store and distribution center employees cannot take vacation between November 20 and January 2, our busiest season, unless their general manager approves an exception. Head office employees have no blackout period.
+
+[4] returns-and-refunds-policy.pdf, p. 2 (Holiday returns)
+Holiday returns Items bought between November 1 and December 24 can be returned until January 31 of the following year, even when the usual 45-day window would end earlier. The holiday window never shortens the 90-day window for Summit members.
+
+[5] employee-handbook-time-off.md (Employee Handbook: Time Off)
+Employee Handbook: Time Off This chapter of the employee handbook covers vacation, sick leave, holidays and other paid time off. It applies to all employees; part-time employees earn vacation and sick leave in proportion to their scheduled hours. Parental leave has its own policy.
+
+Question: I work at one of the stores. Can I take a week off between Christmas and New Year?",yes,518,12,1.7,llama3.2:3b,sections-4000,5
+q14,How much per day to borrow a tent that sleeps four?,gear-rental-faq.md,$35 per day.,You can rent a 4-person tent for $35 per day [1].,yes,yes,"[1] gear-rental-faq.md (What can I rent, and what does it cost?)",,"Sources:
+
+[1] gear-rental-faq.md (What can I rent, and what does it cost?)
+What can I rent, and what does it cost? | Item | Price per day | |---|---| | 2-person tent | $25 | | 4-person tent | $35 | | Sleeping bag | $12 | | Sleeping pad | $6 | | Bear canister | $5 | | Touring kayak, with paddle and life jacket | $45 | | Stand-up paddleboard, with paddle and leash | $40 | Trailhead Rewards members get 10% off all rentals.
+
+[2] gear-rental-faq.md (Do I need to clean the gear?)
+Do I need to clean the gear? Please return gear clean and dry. Tents and boats that come back muddy have a $20 cleaning fee, and tents returned wet have a $40 drying fee because of the risk of mildew.
+
+[3] travel-and-expense-policy.pdf, p. 1 (Hotels)
+Hotels The nightly limit, before taxes, is $210 in most cities and $290 in high-cost cities: New York, San Francisco, Boston, Seattle and Washington, DC. When you attend a conference, stay in the conference hotel even if it costs more than the limit.
+
+[4] gear-rental-faq.md (What happens if something gets damaged?)
+What happens if something gets damaged? Normal wear is on us. Accidental damage is charged at our repair center rates, unless you bought the damage waiver: for $4 a day, it covers accidental damage up to $500 per rental. The waiver does not cover loss or theft.
+
+[5] travel-and-expense-policy.pdf, p. 2 (Ground transportation)
+Ground transportation Use public transit, taxis or ride-hailing between airports, hotels and meetings. Rental cars should be compact or midsize. When you drive your own car for business, claim mileage at $0.67 per mile instead of fuel costs. The commute between your home and your usual workplace cannot be claimed.
+
+Question: How much per day to borrow a tent that sleeps four?",yes,553,17,2.0,llama3.2:3b,sections-4000,5
+q15,Do rewards members pay less when they rent equipment?,gear-rental-faq.md,"Yes, Trailhead Rewards members get 10% off all rentals.","Rewards members get 10% off all rentals, which is less than the 30% off regular-price merchandise and 40% off Tallowmere Trail products they receive as employees. [3][5]",no,yes,"[3] gear-rental-faq.md (What can I rent, and what does it cost?)
+[5] benefits-overview.pdf, p. 1 (Employee discount)",,"Sources:
+
+[1] loyalty-program-terms.pdf, p. 2 (Member pricing on rentals)
+Member pricing on rentals Members get a discount on gear rentals. The Gear Rental FAQ has the details.
+
+[2] loyalty-program-terms.pdf, p. 1 (Earning points)
+Earning points Members earn 1 point for every $1 spent on merchandise, after discounts and before tax and shipping. Tallowmere Trail products earn 2 points per $1. Gift card purchases, rentals, repairs and shipping charges do not earn points. Points appear in your account within 48 hours of a purchase.
+
+[3] gear-rental-faq.md (What can I rent, and what does it cost?)
+What can I rent, and what does it cost? | Item | Price per day | |---|---| | 2-person tent | $25 | | 4-person tent | $35 | | Sleeping bag | $12 | | Sleeping pad | $6 | | Bear canister | $5 | | Touring kayak, with paddle and life jacket | $45 | | Stand-up paddleboard, with paddle and leash | $40 | Trailhead Rewards members get 10% off all rentals.
+
+[4] remote-work-policy.md (What equipment and allowances do I get?)
+What equipment and allowances do I get? - A company laptop, monitor and headset. - A one-time home office stipend of $500 for things like a desk chair or a second monitor, available after 90 days of employment. - An internet allowance of $40 per month, paid through payroll. Equipment remains company property and must be returned within 10 days of your last day.
+
+[5] benefits-overview.pdf, p. 1 (Employee discount)
+Employee discount From your first day, you get 30% off regular-price merchandise and 40% off Tallowmere Trail products, in stores and online. The discount does not apply to gift cards, rentals or items already on sale, and it is capped at $3,000 of retail value per calendar year. It is for you and your household only.
+
+Question: Do rewards members pay less when they rent equipment?",yes,558,44,2.8,llama3.2:3b,sections-4000,5
+q16,Will you hold money on my card when I pick up a rented paddleboard?,gear-rental-faq.md,"Yes, a $200 hold on a credit card, released when the gear comes back in good condition; debit cards and cash are not accepted for the deposit.","Yes, we place a hold on a credit card when you pick up a rented paddleboard, and the hold is $40. [1]",no,partial,[1] gear-rental-faq.md (Is there a deposit?),,"Sources:
+
+[1] gear-rental-faq.md (Is there a deposit?)
+Is there a deposit? We place a hold on a credit card when you pick up: $200 for kayaks and paddleboards, and $100 for all other gear. The hold is released when the gear comes back in good condition. Debit cards and cash are not accepted for the deposit.
+
+[2] shipping-faq.md (How do kayaks, canoes and paddleboards ship?)
+How do kayaks, canoes and paddleboards ship? Boats and boards ship by freight for a flat $89, in 7-14 business days, and free-shipping offers never apply to them. The freight company calls to schedule a delivery appointment, and delivery is to the curb. Someone 18 or older must be there to sign.
+
+[3] store-opening-and-closing-procedures.md (Opening the store > Opening steps)
+Opening steps 1. Look for signs of a break-in before you unlock. If anything looks wrong, do not go in: call the police, then the on-call store manager. 2. Disarm the alarm with your personal code. Never share alarm codes; the alarm log shows whose code was used. 3. Count each register drawer. Every drawer starts the day with a $200 float. Report any difference over $5 to the store manager. 4. Turn on the lights and sign in to the point-of-sale system. 5. Check the rental desk for reservations due for pickup today. 6. Hold the daily team huddle 20 minutes before opening.
+
+[4] it-security-policy.pdf, p. 1 (Payment card data)
+Payment card data Card numbers are entered only into the point-of-sale system or the website checkout. Never write down, photograph, email or store a customer's card number anywhere. Tallowmere Outfitters - IT Security Policy - Page 1 of 2
+
+[5] gear-rental-faq.md (What can I rent, and what does it cost?)
+What can I rent, and what does it cost? | Item | Price per day | |---|---| | 2-person tent | $25 | | 4-person tent | $35 | | Sleeping bag | $12 | | Sleeping pad | $6 | | Bear canister | $5 | | Touring kayak, with paddle and life jacket | $45 | | Stand-up paddleboard, with paddle and leash | $40 | Trailhead Rewards members get 10% off all rentals.
+
+Question: Will you hold money on my card when I pick up a rented paddleboard?",yes,654,30,2.6,llama3.2:3b,sections-4000,5
+q17,Someone new is joining my team. How early should I order their computer?,it-helpdesk-faq.md,At least 5 business days before their start date.,"You should request a new hire's laptop and accounts at least 5 business days before the start date, as stated in the IT Help Desk FAQ [2].",yes,yes,[2] it-helpdesk-faq.md (How long before a new hire's laptop is ready?),,"Sources:
+
+[1] onboarding-checklist.md (Before the first day (manager))
+Before the first day (manager) - Request a laptop and accounts through the IT portal. The IT Help Desk FAQ lists the lead time. - Choose an onboarding buddy from the team: someone who is not the new employee's manager and has been with us for at least a year. - Send the welcome email with the start time, the location and the dress code.
+
+[2] it-helpdesk-faq.md (How long before a new hire's laptop is ready?)
+How long before a new hire's laptop is ready? Managers should request a new hire's laptop and accounts at least 5 business days before the start date.
+
+[3] store-opening-and-closing-procedures.md (Opening the store > Who opens?)
+Who opens? Two employees open together, arriving 45 minutes before opening time, and one of them must be a manager or key holder. Never open alone: if your partner is late, wait in your car and call the store manager.
+
+[4] onboarding-checklist.md (New Employee Onboarding Checklist)
+New Employee Onboarding Checklist Managers and new employees work through this checklist together. It runs from the week before the start date to the end of the introductory period.
+
+[5] onboarding-checklist.md (First 30 days)
+First 30 days - Meet your manager one-on-one every week. - Agree on goals for your first 30, 60 and 90 days. - Meet your buddy at least twice a week. The buddy pairing lasts 60 days, and buddies get a $50 gift card when it ends.
+
+Question: Someone new is joining my team. How early should I order their computer?",yes,466,33,2.1,llama3.2:3b,sections-4000,5
+q18,I typed my password wrong too many times and now I'm locked out. How do I get back in?,it-helpdesk-faq.md,After 10 failed attempts the account locks for 30 minutes and then unlocks automatically; the help desk can unlock it sooner.,"After 10 failed sign-in attempts, your account locks for 30 minutes and then unlocks automatically. You can try again after 30 minutes have passed. If you are unable to access your account after 30 minutes, you can contact the help desk for assistance, who can unlock your account sooner. [1]",yes,yes,[1] it-helpdesk-faq.md (How do I reset my password?),,"Sources:
+
+[1] it-helpdesk-faq.md (How do I reset my password?)
+How do I reset my password? Use ""Forgot password"" on the sign-in page and confirm with your authenticator app. After 10 failed sign-in attempts your account locks for 30 minutes and then unlocks automatically; the help desk can unlock it sooner.
+
+[2] it-security-policy.pdf, p. 1 (Passwords)
+Passwords Use a passphrase of at least 14 characters for every work account, and never reuse a work password anywhere else. Passwords do not expire on a schedule; change yours right away if you think someone else may know it. Your last 10 passwords cannot be reused.
+
+[3] store-opening-and-closing-procedures.md (Opening the store > Opening steps)
+Opening steps 1. Look for signs of a break-in before you unlock. If anything looks wrong, do not go in: call the police, then the on-call store manager. 2. Disarm the alarm with your personal code. Never share alarm codes; the alarm log shows whose code was used. 3. Count each register drawer. Every drawer starts the day with a $200 float. Report any difference over $5 to the store manager. 4. Turn on the lights and sign in to the point-of-sale system. 5. Check the rental desk for reservations due for pickup today. 6. Hold the daily team huddle 20 minutes before opening.
+
+[4] it-security-policy.pdf, p. 1 (Password manager)
+Password manager Store work passwords in Lockbox, the company password manager. Do not keep passwords in browsers, documents or notes.
+
+[5] it-security-policy.pdf, p. 1 (Multi-factor authentication)
+Multi-factor authentication Multi-factor authentication is required for email, the Waypoint HR portal, the VPN and every administrator account, including point-of-sale administration. Use the authenticator app or a hardware security key. Text message codes are not allowed, because they can be intercepted.
+
+Question: I typed my password wrong too many times and now I'm locked out. How do I get back in?",yes,549,64,3.3,llama3.2:3b,sections-4000,5
+q19,The card reader at my till stopped working on a busy Saturday. Who should I call?,it-helpdesk-faq.md,The store support line at extension 4400; a register that cannot take payments is priority 1 and a technician responds within 15 minutes.,"Call the store support line at extension 4400. A register that cannot take payments is a priority 1 issue, and a technician responds within 15 minutes, seven days a week, during store hours [1].",yes,yes,[1] it-helpdesk-faq.md (A register is down in my store. Who do I call?),,"Sources:
+
+[1] it-helpdesk-faq.md (A register is down in my store. Who do I call?)
+A register is down in my store. Who do I call? Call the store support line at extension 4400. A register that cannot take payments is a priority 1 issue, and a technician responds within 15 minutes, seven days a week, during store hours.
+
+[2] gear-rental-faq.md (What if I return gear late?)
+What if I return gear late? Each late day is charged at the daily rate. If gear is more than 3 days late and we cannot reach you, we treat it as unreturned and charge the full replacement cost to the card on file.
+
+[3] company-overview-faq.md (How do customers reach customer service?)
+How do customers reach customer service? Customer service answers the phone at (360) 555-0142 from 8 a.m. to 8 p.m. Monday through Saturday and from 10 a.m. to 6 p.m. on Sunday, Pacific Time. Customers can also email help@tallowmere.example at any time, and we reply within one business day.
+
+[4] it-helpdesk-faq.md (How do I contact the help desk?)
+How do I contact the help desk? Open a ticket in the IT portal, email helpdesk@tallowmere.example or call extension 4357 (H-E-L-P). The help desk is staffed from 7 a.m. to 7 p.m. Monday to Friday and from 8 a.m. to 4 p.m. on Saturday, Pacific Time. Outside those hours, extension 4357 reaches the on-call technician, for urgent problems only.
+
+[5] travel-and-expense-policy.pdf, p. 1 (Travel safety)
+Travel safety If something goes wrong on a trip, such as a cancelled flight, a natural disaster or a medical emergency, call the 24-hour travel assistance line printed on the back of your TripDesk itinerary. It can rebook travel, find a doctor and contact your manager for you. Tell your manager about any change that Tallowmere Outfitters - Travel and Expense Policy - Page 1 of 2
+
+Question: The card reader at my till stopped working on a busy Saturday. Who should I call?",yes,591,45,2.9,llama3.2:3b,sections-4000,5
+q20,How soon do I have to install system updates on my work laptop?,it-security-policy.pdf,"Within 14 days of release, and critical security patches within 72 hours.","You must install operating system updates within 14 days of release, and critical security patches within 72 hours [1].",yes,yes,"[1] it-security-policy.pdf, p. 1 (Laptops and phones)",,"Sources:
+
+[1] it-security-policy.pdf, p. 1 (Laptops and phones)
+Laptops and phones - Company laptops have full-disk encryption, which must stay on. - Screens lock automatically after 5 minutes without activity; lock yours whenever you step away. - Install operating system updates within 14 days of release, and critical security patches within 72 hours. - You can read work email on a personal phone only through the managed email app.
+
+[2] it-helpdesk-faq.md (How long before a new hire's laptop is ready?)
+How long before a new hire's laptop is ready? Managers should request a new hire's laptop and accounts at least 5 business days before the start date.
+
+[3] it-helpdesk-faq.md (How do I get new software?)
+How do I get new software? Request it in the IT portal. Software on the standard list is approved within 2 business days. Anything else needs a security review, which takes up to 10 business days.
+
+[4] it-helpdesk-faq.md (When is my laptop replaced?)
+When is my laptop replaced? Laptops are replaced every 4 years, or sooner if they fail. The design team uses MacBook Pro laptops; everyone else gets a standard Windows laptop. Loaner laptops are available while yours is being repaired.
+
+[5] onboarding-checklist.md (Before the first day (manager))
+Before the first day (manager) - Request a laptop and accounts through the IT portal. The IT Help Desk FAQ lists the lead time. - Choose an onboarding buddy from the team: someone who is not the new employee's manager and has been with us for at least a year. - Send the welcome email with the start time, the location and the dress code.
+
+Question: How soon do I have to install system updates on my work laptop?",yes,492,25,2.0,llama3.2:3b,sections-4000,5
+q21,Can I get my sign-in codes sent by text message?,it-security-policy.pdf,No. Text message codes are not allowed; use the authenticator app or a hardware security key.,"No, you cannot get your sign-in codes sent by text message. According to the IT security policy, text message codes are not allowed for multi-factor authentication because they can be intercepted [2].",yes,yes,"[2] it-security-policy.pdf, p. 1 (Multi-factor authentication)",,"Sources:
+
+[1] it-security-policy.pdf, p. 1 (Phishing)
+Phishing Report suspicious emails with the Report Phishing button in your email. Never sign in through a link in an email; go to the site directly instead. If you clicked a link or entered your password, tell IT immediately. Nobody gets in trouble for reporting a mistake.
+
+[2] it-security-policy.pdf, p. 1 (Multi-factor authentication)
+Multi-factor authentication Multi-factor authentication is required for email, the Waypoint HR portal, the VPN and every administrator account, including point-of-sale administration. Use the authenticator app or a hardware security key. Text message codes are not allowed, because they can be intercepted.
+
+[3] it-security-policy.pdf, p. 1 (Payment card data)
+Payment card data Card numbers are entered only into the point-of-sale system or the website checkout. Never write down, photograph, email or store a customer's card number anywhere. Tallowmere Outfitters - IT Security Policy - Page 1 of 2
+
+[4] travel-and-expense-policy.pdf, p. 1 (Travel safety)
+Travel safety If something goes wrong on a trip, such as a cancelled flight, a natural disaster or a medical emergency, call the 24-hour travel assistance line printed on the back of your TripDesk itinerary. It can rebook travel, find a doctor and contact your manager for you. Tell your manager about any change that Tallowmere Outfitters - Travel and Expense Policy - Page 1 of 2
+
+[5] it-security-policy.pdf, p. 1 (Passwords)
+Passwords Use a passphrase of at least 14 characters for every work account, and never reuse a work password anywhere else. Passwords do not expire on a schedule; change yours right away if you think someone else may know it. Your last 10 passwords cannot be reused.
+
+Question: Can I get my sign-in codes sent by text message?",yes,514,40,2.5,llama3.2:3b,sections-4000,5
+q22,How many points do I need before I get money off?,loyalty-program-terms.pdf,"200 points, which automatically become a $10 reward certificate.",You need 200 points to get a $10 reward certificate. [1][4],yes,yes,"[1] loyalty-program-terms.pdf, p. 1 (Earning points)
+[4] loyalty-program-terms.pdf, p. 1 (Returns and points)",,"Sources:
+
+[1] loyalty-program-terms.pdf, p. 1 (Earning points)
+Earning points Members earn 1 point for every $1 spent on merchandise, after discounts and before tax and shipping. Tallowmere Trail products earn 2 points per $1. Gift card purchases, rentals, repairs and shipping charges do not earn points. Points appear in your account within 48 hours of a purchase.
+
+[2] loyalty-program-terms.pdf, p. 1 (Point expiration)
+Point expiration Points do not expire as long as you make at least one purchase every 18 months. If an account has no purchases for 18 months, all of its points expire.
+
+[3] gear-rental-faq.md (Can I cancel a reservation?)
+Can I cancel a reservation? Cancel at least 48 hours before pickup for a full refund. Later cancellations, and reservations that are never picked up, are charged one day's rent.
+
+[4] loyalty-program-terms.pdf, p. 1 (Returns and points)
+Returns and points When you return an item, the points it earned are taken back. If you paid partly with a reward certificate, the refund covers only the amount you paid by other means, and the certificate value goes back to your account if the certificate has not expired. Tallowmere Outfitters - Trailhead Rewards Program Terms - Page 1 of 2
+
+[5] loyalty-program-terms.pdf, p. 1 (Reward certificates)
+Reward certificates Every 200 points automatically turn into a $10 reward certificate, sent by email. Certificates can be used in stores and online, and expire 90 days after they are issued. They have no cash value and cannot be used to buy gift cards.
+
+Question: How many points do I need before I get money off?",yes,484,19,1.8,llama3.2:3b,sections-4000,5
+q23,I just signed up for the rewards program and my birthday is next week. Will I get the birthday treat this year?,loyalty-program-terms.pdf,Probably not: the birthday must be in your profile at least 30 days before your birthday month to get the $5 certificate that year.,"To receive the birthday reward, you must add your birthday to your profile at least 30 days before your birthday month. Since your birthday is next week, you will not be able to add it to your profile in time to receive the reward this year [1].",yes,yes,"[1] loyalty-program-terms.pdf, p. 1 (Birthday reward)",,"Sources:
+
+[1] loyalty-program-terms.pdf, p. 1 (Birthday reward)
+Birthday reward Members get a $5 birthday certificate during their birthday month. Add your birthday to your profile at least 30 days before your birthday month to receive it that year.
+
+[2] loyalty-program-terms.pdf, p. 1 (Reward certificates)
+Reward certificates Every 200 points automatically turn into a $10 reward certificate, sent by email. Certificates can be used in stores and online, and expire 90 days after they are issued. They have no cash value and cannot be used to buy gift cards.
+
+[3] loyalty-program-terms.pdf, p. 1 (About the program)
+About the program Trailhead Rewards is our free loyalty program. Anyone 18 or older with a US or Canadian mailing address can join online, in a store or in our app. Each person can have one account, and points cannot be transferred or combined between accounts.
+
+[4] benefits-overview.pdf, p. 2 (Open enrollment and life events)
+Open enrollment and life events You choose or change benefits during open enrollment, which runs from November 1 to 15 each year, for coverage starting January 1. After a qualifying life event, such as marriage, a birth or adoption, or losing other coverage, you have 30 days to make changes. Tallowmere Outfitters - Benefits Overview 2026 - Page 2 of 2
+
+[5] onboarding-checklist.md (First 30 days)
+First 30 days - Meet your manager one-on-one every week. - Agree on goals for your first 30, 60 and 90 days. - Meet your buddy at least twice a week. The buddy pairing lasts 60 days, and buddies get a $50 gift card when it ends.
+
+Question: I just signed up for the rewards program and my birthday is next week. Will I get the birthday treat this year?",yes,511,54,2.9,llama3.2:3b,sections-4000,5
+q24,"As a new hire, how long do I have to finish the required online courses?",onboarding-checklist.md,"Within 14 days of your start date (security awareness, harassment prevention and Gear 101).",You have 14 days to finish the required online courses after your start date. [2],yes,yes,[2] onboarding-checklist.md (First two weeks),,"Sources:
+
+[1] it-helpdesk-faq.md (How long before a new hire's laptop is ready?)
+How long before a new hire's laptop is ready? Managers should request a new hire's laptop and accounts at least 5 business days before the start date.
+
+[2] onboarding-checklist.md (First two weeks)
+First two weeks Finish the required training in the Waypoint HR portal within 14 days of your start date: - Security awareness (45 minutes) - Respectful workplace and harassment prevention (2 hours) - Gear 101, an introduction to our products (90 minutes) Store and distribution center employees also complete workplace safety training before their first shift on the sales floor or the warehouse floor.
+
+[3] parental-leave-policy.pdf, p. 1 (Eligibility)
+Eligibility Full-time employees, and part-time employees scheduled for 20 or more hours a week, are eligible after 6 months of continuous employment. Employees who are not yet eligible when their child arrives become eligible when they reach 6 months, and can take their leave then, within the time limit below.
+
+[4] onboarding-checklist.md (Before the first day (manager))
+Before the first day (manager) - Request a laptop and accounts through the IT portal. The IT Help Desk FAQ lists the lead time. - Choose an onboarding buddy from the team: someone who is not the new employee's manager and has been with us for at least a year. - Send the welcome email with the start time, the location and the dress code.
+
+[5] onboarding-checklist.md (First day)
+First day - Arrive at 9 a.m. Head office employees go to reception; store and distribution center employees go to their site manager. - Have your ID badge photo taken. - Pick up your laptop from IT and set up multi-factor authentication. - Complete your tax forms and the I-9 employment eligibility form. Bring your identity documents: the I-9 must be completed within 3 business days of your start date.
+
+Question: As a new hire, how long do I have to finish the required online courses?",yes,549,20,2.1,llama3.2:3b,sections-4000,5
+q25,What does someone get for being a new employee's buddy?,onboarding-checklist.md,A $50 gift card when the 60-day buddy pairing ends.,"When the buddy pairing ends, the buddy receives a $50 gift card [1].",yes,yes,[1] onboarding-checklist.md (First 30 days),,"Sources:
+
+[1] onboarding-checklist.md (First 30 days)
+First 30 days - Meet your manager one-on-one every week. - Agree on goals for your first 30, 60 and 90 days. - Meet your buddy at least twice a week. The buddy pairing lasts 60 days, and buddies get a $50 gift card when it ends.
+
+[2] onboarding-checklist.md (Before the first day (manager))
+Before the first day (manager) - Request a laptop and accounts through the IT portal. The IT Help Desk FAQ lists the lead time. - Choose an onboarding buddy from the team: someone who is not the new employee's manager and has been with us for at least a year. - Send the welcome email with the start time, the location and the dress code.
+
+[3] onboarding-checklist.md (New Employee Onboarding Checklist)
+New Employee Onboarding Checklist Managers and new employees work through this checklist together. It runs from the week before the start date to the end of the introductory period.
+
+[4] store-opening-and-closing-procedures.md (Opening the store > Who opens?)
+Who opens? Two employees open together, arriving 45 minutes before opening time, and one of them must be a manager or key holder. Never open alone: if your partner is late, wait in your car and call the store manager.
+
+[5] benefits-overview.pdf, p. 1 (Employee discount)
+Employee discount From your first day, you get 30% off regular-price merchandise and 40% off Tallowmere Trail products, in stores and online. The discount does not apply to gift cards, rentals or items already on sale, and it is capped at $3,000 of retail value per calendar year. It is for you and your household only.
+
+Question: What does someone get for being a new employee's buddy?",yes,499,18,1.9,llama3.2:3b,sections-4000,5
+q26,My partner is having a baby and I'm not the main caregiver. How much paid leave can I take?,parental-leave-policy.pdf,6 weeks of fully paid leave as a secondary caregiver (each parent chooses; primary caregivers get 16 weeks).,"As a secondary caregiver, you are eligible for 6 weeks of fully paid leave. [1]",yes,yes,"[1] parental-leave-policy.pdf, p. 1 (How much leave)",,"Sources:
+
+[1] parental-leave-policy.pdf, p. 1 (How much leave)
+How much leave - Primary caregivers: 16 weeks of fully paid leave - Secondary caregivers: 6 weeks of fully paid leave Each parent decides whether they are the primary or the secondary caregiver. If both parents work here, both can be primary caregivers.
+
+[2] parental-leave-policy.pdf, p. 1 (When to take leave)
+When to take leave Leave must be taken within 12 months of the birth, adoption or placement. It can be taken in one block or split into two blocks, each at least 2 weeks long.
+
+[3] parental-leave-policy.pdf, p. 1 (Phased return to work)
+Phased return to work After primary caregiver leave, you can return on a reduced schedule of 60% of your usual hours for up to 4 weeks, at full pay. Agree on the schedule with your manager before your leave ends. Tallowmere Outfitters - Parental Leave Policy - Page 1 of 2
+
+[4] employee-handbook-time-off.md (Sick leave)
+Sick leave Everyone gets 10 paid sick days per calendar year, for their own illness or to care for a family member. Sick days do not carry over. We only ask for a doctor's note after 3 or more consecutive sick days.
+
+[5] parental-leave-policy.pdf, p. 1 (Eligibility)
+Eligibility Full-time employees, and part-time employees scheduled for 20 or more hours a week, are eligible after 6 months of continuous employment. Employees who are not yet eligible when their child arrives become eligible when they reach 6 months, and can take their leave then, within the time limit below.
+
+Question: My partner is having a baby and I'm not the main caregiver. How much paid leave can I take?",yes,500,21,2.0,llama3.2:3b,sections-4000,5
+q27,How far ahead do I need to warn my manager before I go on leave for a new baby?,parental-leave-policy.pdf,"At least 30 days before the leave starts, or as soon as possible if the timing is unexpected.","You need to give your manager at least 30 days' notice before your leave starts, or as soon as possible if the timing is unexpected [1].",yes,yes,"[1] parental-leave-policy.pdf, p. 1 (Giving notice)",,"Sources:
+
+[1] parental-leave-policy.pdf, p. 1 (Giving notice)
+Giving notice Tell your manager and the People Team at least 30 days before you expect your leave to start, or as soon as you can if the timing is unexpected. Submit the parental leave form in the Waypoint HR portal so that payroll and benefits are updated.
+
+[2] parental-leave-policy.pdf, p. 1 (When to take leave)
+When to take leave Leave must be taken within 12 months of the birth, adoption or placement. It can be taken in one block or split into two blocks, each at least 2 weeks long.
+
+[3] it-helpdesk-faq.md (How long before a new hire's laptop is ready?)
+How long before a new hire's laptop is ready? Managers should request a new hire's laptop and accounts at least 5 business days before the start date.
+
+[4] parental-leave-policy.pdf, p. 1 (Before the birth)
+Before the birth Time off for medical reasons before a birth, such as doctor-ordered bed rest, is covered by short-term disability rather than by this policy, and it does not reduce your parental leave. The Benefits Overview explains short-term disability.
+
+[5] parental-leave-policy.pdf, p. 1 (Eligibility)
+Eligibility Full-time employees, and part-time employees scheduled for 20 or more hours a week, are eligible after 6 months of continuous employment. Employees who are not yet eligible when their child arrives become eligible when they reach 6 months, and can take their leave then, within the time limit below.
+
+Question: How far ahead do I need to warn my manager before I go on leave for a new baby?",yes,469,32,2.1,llama3.2:3b,sections-4000,5
+q28,"When my time off with the baby ends, can I come back on shorter days at first?",parental-leave-policy.pdf,"Yes, after primary caregiver leave: up to 4 weeks at 60% of your usual hours, on full pay.","You can return on a reduced schedule of 60% of your usual hours for up to 4 weeks after primary caregiver leave, at full pay, and agree on the schedule with your manager before your leave ends [2].",yes,yes,"[2] parental-leave-policy.pdf, p. 1 (Phased return to work)",,"Sources:
+
+[1] parental-leave-policy.pdf, p. 1 (Before the birth)
+Before the birth Time off for medical reasons before a birth, such as doctor-ordered bed rest, is covered by short-term disability rather than by this policy, and it does not reduce your parental leave. The Benefits Overview explains short-term disability.
+
+[2] parental-leave-policy.pdf, p. 1 (Phased return to work)
+Phased return to work After primary caregiver leave, you can return on a reduced schedule of 60% of your usual hours for up to 4 weeks, at full pay. Agree on the schedule with your manager before your leave ends. Tallowmere Outfitters - Parental Leave Policy - Page 1 of 2
+
+[3] parental-leave-policy.pdf, p. 2 (Unpaid extension)
+Unpaid extension After paid leave ends, you can ask for up to 8 more weeks of unpaid leave. Your manager and the People Team decide based on the needs of the team, and your benefits continue during the unpaid extension. Tallowmere Outfitters - Parental Leave Policy - Page 2 of 2
+
+[4] parental-leave-policy.pdf, p. 1 (Eligibility)
+Eligibility Full-time employees, and part-time employees scheduled for 20 or more hours a week, are eligible after 6 months of continuous employment. Employees who are not yet eligible when their child arrives become eligible when they reach 6 months, and can take their leave then, within the time limit below.
+
+[5] parental-leave-policy.pdf, p. 1 (When to take leave)
+When to take leave Leave must be taken within 12 months of the birth, adoption or placement. It can be taken in one block or split into two blocks, each at least 2 weeks long.
+
+Question: When my time off with the baby ends, can I come back on shorter days at first?",yes,515,46,2.9,llama3.2:3b,sections-4000,5
+q29,Will I get a rating at my April review?,performance-review-process.md,No. The April cycle is a check-in without a rating; ratings are given at the annual review in October.,"No, you will not get a rating at your April review, as it is a Spring check-in and does not include a rating [1].",yes,yes,[1] performance-review-process.md (When do reviews happen?),,"Sources:
+
+[1] performance-review-process.md (When do reviews happen?)
+When do reviews happen? | Cycle | Month | Includes a rating | |---|---|---| | Spring check-in | April | No | | Annual review | October | Yes | Employees who are still in their 90-day introductory period when a cycle starts skip that cycle.
+
+[2] performance-review-process.md (What is the rating scale?)
+What is the rating scale? The annual review uses four ratings: Developing, Solid, Strong and Exceptional. Most employees who meet the expectations of their role are rated Solid. Before ratings are final, the managers in each department meet in calibration sessions to make sure the scale is applied consistently.
+
+[3] performance-review-process.md (What if I'm on leave during a review cycle?)
+What if I'm on leave during a review cycle? Your review is postponed until you return. Being on leave never affects your rating.
+
+[4] performance-review-process.md (How does a review work?)
+How does a review work? 1. You write a self-review in the Waypoint HR portal. It is due 2 weeks before your review meeting. 2. Your manager writes their review and may ask up to three colleagues for input. 3. You and your manager meet to discuss both reviews and set goals for the next six months.
+
+[5] performance-review-process.md (Performance Review Process)
+Performance Review Process We review performance twice a year, so that feedback is regular and nothing in the annual review comes as a surprise.
+
+Question: Will I get a rating at my April review?",yes,439,30,2.1,llama3.2:3b,sections-4000,5
+q30,When does a raise from my yearly evaluation actually start?,performance-review-process.md,Merit increases take effect on January 1.,A raise from your yearly evaluation takes effect on January 1. This is stated in [1].,yes,yes,[1] performance-review-process.md (How are pay increases decided?),,"Sources:
+
+[1] performance-review-process.md (How are pay increases decided?)
+How are pay increases decided? Merit increases are based on the annual review rating and take effect on January 1. The leadership team sets the budget for increases each year. Promotions happen twice a year, in January and July, separately from merit increases.
+
+[2] performance-review-process.md (When do reviews happen?)
+When do reviews happen? | Cycle | Month | Includes a rating | |---|---|---| | Spring check-in | April | No | | Annual review | October | Yes | Employees who are still in their 90-day introductory period when a cycle starts skip that cycle.
+
+[3] benefits-overview.pdf, p. 2 (Open enrollment and life events)
+Open enrollment and life events You choose or change benefits during open enrollment, which runs from November 1 to 15 each year, for coverage starting January 1. After a qualifying life event, such as marriage, a birth or adoption, or losing other coverage, you have 30 days to make changes. Tallowmere Outfitters - Benefits Overview 2026 - Page 2 of 2
+
+[4] performance-review-process.md (Performance Review Process)
+Performance Review Process We review performance twice a year, so that feedback is regular and nothing in the annual review comes as a surprise.
+
+[5] performance-review-process.md (What is the rating scale?)
+What is the rating scale? The annual review uses four ratings: Developing, Solid, Strong and Exceptional. Most employees who meet the expectations of their role are rated Solid. Before ratings are final, the managers in each department meet in calibration sessions to make sure the scale is applied consistently.
+
+Question: When does a raise from my yearly evaluation actually start?",yes,476,21,1.9,llama3.2:3b,sections-4000,5
+q31,I bought boots last week and now your website sells them for less. Can I get the difference back?,price-match-policy.md,"Yes, if the price drops within 14 days of purchase (from delivery for online orders), the difference is refunded.","Yes, you can get the difference back if you buy the boots within 14 days of your purchase. According to the price-match-policy.md, if the website lowers its own price or you find a qualifying lower price elsewhere within 14 days of your purchase, you can get a refund for the difference. [1]",no,yes,[1] price-match-policy.md (Can I get a price adjustment after I buy?),,"Sources:
+
+[1] price-match-policy.md (Can I get a price adjustment after I buy?)
+Can I get a price adjustment after I buy? Yes. If we lower our own price, or you find a qualifying lower price elsewhere, within 14 days of your purchase, we refund the difference. Bring your receipt to a store, or send your order number through the price adjustment form on our website. For online orders, the 14 days count from the delivery date.
+
+[2] benefits-overview.pdf, p. 1 (Employee discount)
+Employee discount From your first day, you get 30% off regular-price merchandise and 40% off Tallowmere Trail products, in stores and online. The discount does not apply to gift cards, rentals or items already on sale, and it is capped at $3,000 of retail value per calendar year. It is for you and your household only.
+
+[3] returns-and-refunds-policy.pdf, p. 1 (Return window)
+Return window Unused items can be returned within 45 days of purchase for store purchases, or within 45 days of delivery for online orders. Trailhead Rewards members in the Summit tier have 90 days. Bring the receipt or order number; returns without one are covered further down.
+
+[4] returns-and-refunds-policy.pdf, p. 1 (How to return an item)
+How to return an item In a store: bring the item to any of our three stores. Store returns are processed at the counter, and you leave with a receipt that shows the refund. By mail: start a return from your order page to get a prepaid return label. The label costs $7.50, which is deducted from your refund. Labels are free for exchanges and for items that arrived damaged or wrong. Boats and boards: kayaks, canoes and paddleboards can be returned in any store, or collected by our freight partner for $89.
+
+[5] returns-and-refunds-policy.pdf, p. 1 (Overview)
+Overview This policy explains how customers return or exchange items bought from Tallowmere Outfitters in our stores or online, and how and when refunds are paid. It applies to all three stores and to orders shipped from our distribution center. Gear rentals have their own terms in the Gear Rental FAQ.
+
+Question: I bought boots last week and now your website sells them for less. Can I get the difference back?",yes,607,65,3.7,llama3.2:3b,sections-4000,5
+q32,Will you match a lower price I saw from some random seller on a big shopping site?,price-match-policy.md,No. Prices from third-party sellers on marketplace websites are excluded.,"No, you will not be eligible for a price match from us if the item was purchased from a third-party seller, such as a big shopping site [1][2].",yes,yes,"[1] price-match-policy.md (Price Match Policy)
+[2] price-match-policy.md (What qualifies for a price match?)",,"Sources:
+
+[1] price-match-policy.md (Price Match Policy)
+Price Match Policy We want you to pay a fair price without shopping around. If you find a lower price on an identical item, we match it, within the limits below.
+
+[2] price-match-policy.md (What qualifies for a price match?)
+What qualifies for a price match? The item must be identical: same brand, model, size and color. It must be in stock at the competitor and sold directly by a US retailer with a physical store or its own website. We check the price on the competitor's website, or in a current printed ad, before matching.
+
+[3] price-match-policy.md (Does this apply to rentals and repairs?)
+Does this apply to rentals and repairs? No. Price matching applies only to new merchandise. Rental and repair prices are fixed.
+
+[4] price-match-policy.md (Can I get a price adjustment after I buy?)
+Can I get a price adjustment after I buy? Yes. If we lower our own price, or you find a qualifying lower price elsewhere, within 14 days of your purchase, we refund the difference. Bring your receipt to a store, or send your order number through the price adjustment form on our website. For online orders, the 14 days count from the delivery date.
+
+[5] price-match-policy.md (Who decides if a match is valid?)
+Who decides if a match is valid? Store managers and customer service leads have the final say. They may decline a match if the competitor's price is an obvious error or the item cannot be verified.
+
+Question: Will you match a lower price I saw from some random seller on a big shopping site?",no,455,36,2.4,llama3.2:3b,sections-4000,5
+q33,"If I find three identical stoves cheaper somewhere else, will you match the price on all three?",price-match-policy.md,"No, only up to 2 units of the same item per customer.","No, you can only get a price match on up to 2 units of the same item per customer. If you find three identical stoves cheaper, you can only get a price match on two of them. [1][4]",yes,yes,"[1] price-match-policy.md (What qualifies for a price match?)
+[4] price-match-policy.md (Are there limits?)",,"Sources:
+
+[1] price-match-policy.md (What qualifies for a price match?)
+What qualifies for a price match? The item must be identical: same brand, model, size and color. It must be in stock at the competitor and sold directly by a US retailer with a physical store or its own website. We check the price on the competitor's website, or in a current printed ad, before matching.
+
+[2] price-match-policy.md (Price Match Policy)
+Price Match Policy We want you to pay a fair price without shopping around. If you find a lower price on an identical item, we match it, within the limits below.
+
+[3] price-match-policy.md (Does this apply to rentals and repairs?)
+Does this apply to rentals and repairs? No. Price matching applies only to new merchandise. Rental and repair prices are fixed.
+
+[4] price-match-policy.md (Are there limits?)
+Are there limits? We match up to 2 units of the same item per customer. A price match cannot be combined with other promotions on the same item, but you still earn Trailhead Rewards points on the matched price.
+
+[5] benefits-overview.pdf, p. 1 (Employee discount)
+Employee discount From your first day, you get 30% off regular-price merchandise and 40% off Tallowmere Trail products, in stores and online. The discount does not apply to gift cards, rentals or items already on sale, and it is capped at $3,000 of retail value per calendar year. It is for you and your household only.
+
+Question: If I find three identical stoves cheaper somewhere else, will you match the price on all three?",yes,453,49,3.0,llama3.2:3b,sections-4000,5
+q34,Which days of the week do I need to be in the office?,remote-work-policy.md,Tuesdays and Thursdays.,"You need to be in the office on Tuesdays and Thursdays, which are your anchor days. [1]",yes,yes,[1] remote-work-policy.md (How does hybrid work?),,"Sources:
+
+[1] remote-work-policy.md (How does hybrid work?)
+How does hybrid work? Hybrid employees work at the head office on Tuesdays and Thursdays, our anchor days, and choose where to work on the other days. Teams can agree on extra office days for planning sessions or launches. Everyone should be available for meetings during core hours, 10 a.m. to 3 p.m. Pacific Time.
+
+[2] employee-handbook-time-off.md (Vacation > Are there times I can't take vacation?)
+Are there times I can't take vacation? Store and distribution center employees cannot take vacation between November 20 and January 2, our busiest season, unless their general manager approves an exception. Head office employees have no blackout period.
+
+[3] employee-handbook-time-off.md (Company holidays)
+Company holidays We observe 10 paid holidays: New Year's Day, Martin Luther King Jr. Day, Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day, the day after Thanksgiving, Christmas Eve (half day) and Christmas Day. Store employees who work on a company holiday are paid 1.5 times their regular rate for the hours worked.
+
+[4] onboarding-checklist.md (First day)
+First day - Arrive at 9 a.m. Head office employees go to reception; store and distribution center employees go to their site manager. - Have your ID badge photo taken. - Pick up your laptop from IT and set up multi-factor authentication. - Complete your tax forms and the I-9 employment eligibility form. Bring your identity documents: the I-9 must be completed within 3 business days of your start date.
+
+[5] benefits-overview.pdf, p. 1 (Who is eligible)
+Who is eligible Full-time employees, scheduled for 30 or more hours a week, are eligible for all benefits on the first day of the month after their start date. Part-time employees scheduled for 20 to 29 hours a week are eligible for dental, vision, the 401(k) plan and the employee discount.
+
+Question: Which days of the week do I need to be in the office?",yes,552,24,2.7,llama3.2:3b,sections-4000,5
+q35,Is there any money to help me set up a desk at home?,remote-work-policy.md,"Yes, a one-time $500 home office stipend after 90 days of employment, plus $40 a month for internet.","Yes, there is a one-time home office stipend of $500 available after 90 days of employment, which can be used to set up a desk at home. [1]",yes,yes,[1] remote-work-policy.md (What equipment and allowances do I get?),,"Sources:
+
+[1] remote-work-policy.md (What equipment and allowances do I get?)
+What equipment and allowances do I get? - A company laptop, monitor and headset. - A one-time home office stipend of $500 for things like a desk chair or a second monitor, available after 90 days of employment. - An internet allowance of $40 per month, paid through payroll. Equipment remains company property and must be returned within 10 days of your last day.
+
+[2] store-opening-and-closing-procedures.md (Opening the store > Opening steps)
+Opening steps 1. Look for signs of a break-in before you unlock. If anything looks wrong, do not go in: call the police, then the on-call store manager. 2. Disarm the alarm with your personal code. Never share alarm codes; the alarm log shows whose code was used. 3. Count each register drawer. Every drawer starts the day with a $200 float. Report any difference over $5 to the store manager. 4. Turn on the lights and sign in to the point-of-sale system. 5. Check the rental desk for reservations due for pickup today. 6. Hold the daily team huddle 20 minutes before opening.
+
+[3] it-helpdesk-faq.md (Is there Wi-Fi for guests?)
+Is there Wi-Fi for guests? Yes. Guests at the head office and in the stores can use the Tallowmere-Guest network. Never connect a work laptop to it; work laptops connect automatically to the staff network.
+
+[4] benefits-overview.pdf, p. 2 (Employee assistance program)
+Employee assistance program The employee assistance program offers free, confidential counseling for you and your household, up to 6 sessions per issue, plus legal and financial advice lines. It is available 24 hours a day.
+
+[5] parental-leave-policy.pdf, p. 2 (Support at work)
+Support at work Every site has a private lactation room with a lock, a chair, a refrigerator and a power outlet. Lactation breaks are paid and do not need to be scheduled in advance.
+
+Question: Is there any money to help me set up a desk at home?",yes,564,38,3.2,llama3.2:3b,sections-4000,5
+q36,I'm at the highest level of the rewards program. How long do I have to bring back something I haven't used?,returns-and-refunds-policy.pdf,"90 days (Summit tier), instead of the usual 45 days.","As a Summit tier member, you have 90 days to return unused items. [1]",yes,yes,"[1] returns-and-refunds-policy.pdf, p. 1 (Return window)",,"Sources:
+
+[1] returns-and-refunds-policy.pdf, p. 1 (Return window)
+Return window Unused items can be returned within 45 days of purchase for store purchases, or within 45 days of delivery for online orders. Trailhead Rewards members in the Summit tier have 90 days. Bring the receipt or order number; returns without one are covered further down.
+
+[2] loyalty-program-terms.pdf, p. 1 (Returns and points)
+Returns and points When you return an item, the points it earned are taken back. If you paid partly with a reward certificate, the refund covers only the amount you paid by other means, and the certificate value goes back to your account if the certificate has not expired. Tallowmere Outfitters - Trailhead Rewards Program Terms - Page 1 of 2
+
+[3] loyalty-program-terms.pdf, p. 1 (Reward certificates)
+Reward certificates Every 200 points automatically turn into a $10 reward certificate, sent by email. Certificates can be used in stores and online, and expire 90 days after they are issued. They have no cash value and cannot be used to buy gift cards.
+
+[4] loyalty-program-terms.pdf, p. 2 (Changes to the program)
+Changes to the program We may change these terms or end the program with 30 days' notice by email. Points and certificates you already have stay valid until their normal expiration date. Tallowmere Outfitters - Trailhead Rewards Program Terms - Page 2 of 2
+
+[5] returns-and-refunds-policy.pdf, p. 2 (Holiday returns)
+Holiday returns Items bought between November 1 and December 24 can be returned until January 31 of the following year, even when the usual 45-day window would end earlier. The holiday window never shortens the 90-day window for Summit members.
+
+Question: I'm at the highest level of the rewards program. How long do I have to bring back something I haven't used?",yes,523,20,2.6,llama3.2:3b,sections-4000,5
+q37,The sleeping bag I ordered arrived torn. How many days do I have to let you know?,returns-and-refunds-policy.pdf,Within 14 days of delivery; send a photo and a replacement is shipped at no cost.,You have 14 days from the date of delivery to notify us about the damaged item. [1],yes,yes,"[1] returns-and-refunds-policy.pdf, p. 2 (Damaged or wrong items)",,"Sources:
+
+[1] returns-and-refunds-policy.pdf, p. 2 (Damaged or wrong items)
+Damaged or wrong items Tell us within 14 days of delivery if an item arrives damaged or is not what you ordered. Send a photo through your order page or to help@tallowmere.example, and we ship a replacement at no cost, usually within 2 business days. Tallowmere Outfitters - Returns and Refunds Policy - Page 2 of 2
+
+[2] shipping-faq.md (My package says delivered, but I don't have it. What now?)
+My package says delivered, but I don't have it. What now? Check with neighbors and around the delivery address, then contact customer service within 30 days of the expected delivery date. We open a claim with the carrier, which takes up to 10 business days, and then send a replacement or a refund.
+
+[3] gear-rental-faq.md (Do I need to reserve, and how far ahead can I book?)
+Do I need to reserve, and how far ahead can I book? Walk-ins are welcome when gear is available, but summer weekends sell out. You can reserve online up to 60 days before your pickup date.
+
+[4] gear-rental-faq.md (What if I return gear late?)
+What if I return gear late? Each late day is charged at the daily rate. If gear is more than 3 days late and we cannot reach you, we treat it as unreturned and charge the full replacement cost to the card on file.
+
+[5] travel-and-expense-policy.pdf, p. 1 (Travel safety)
+Travel safety If something goes wrong on a trip, such as a cancelled flight, a natural disaster or a medical emergency, call the 24-hour travel assistance line printed on the back of your TripDesk itinerary. It can rebook travel, find a doctor and contact your manager for you. Tell your manager about any change that Tallowmere Outfitters - Travel and Expense Policy - Page 1 of 2
+
+Question: The sleeping bag I ordered arrived torn. How many days do I have to let you know?",yes,560,22,2.5,llama3.2:3b,sections-4000,5
+q38,I mailed back a jacket last week. When will the money show up on my card?,returns-and-refunds-policy.pdf,"Within 5 business days after it reaches the distribution center, plus 3 to 10 business days for the card issuer to show it.","According to the returns and refunds policy, refunds by payment method, refunds are refunded to the same card [3]. Since you mailed back a jacket, it will be refunded to the same card, and the card issuer can take another 3 to 10 business days to show a refund on your statement [1].",yes,partial,"[3] returns-and-refunds-policy.pdf, p. 2 (Refunds by payment method)
+[1] returns-and-refunds-policy.pdf, p. 1 (When refunds are paid)",,"Sources:
+
+[1] returns-and-refunds-policy.pdf, p. 1 (When refunds are paid)
+When refunds are paid Refunds go back to the original payment method. For mail returns, we issue the refund within 5 business days after the package arrives at our distribution center. For store returns, we issue it at the counter. Card issuers can take another 3 to 10 business days to show a refund on your statement. Original shipping charges are refunded only when the return is caused by our mistake. Tallowmere Outfitters - Returns and Refunds Policy - Page 1 of 2
+
+[2] gear-rental-faq.md (What if I return gear late?)
+What if I return gear late? Each late day is charged at the daily rate. If gear is more than 3 days late and we cannot reach you, we treat it as unreturned and charge the full replacement cost to the card on file.
+
+[3] returns-and-refunds-policy.pdf, p. 2 (Refunds by payment method)
+Refunds by payment method - Credit and debit cards: refunded to the same card. - Gift cards: refunded to a new gift card, which is emailed to you for online orders. - Cash: refunds up to $100 are paid in cash at the counter. Larger cash refunds are mailed as a check within 10 business days. - Pay-in-installments services: refunded to the installment provider, which then adjusts your payment plan. - Split payments: each payment method is refunded in proportion to the amount it paid.
+
+[4] returns-and-refunds-policy.pdf, p. 1 (Return window)
+Return window Unused items can be returned within 45 days of purchase for store purchases, or within 45 days of delivery for online orders. Trailhead Rewards members in the Summit tier have 90 days. Bring the receipt or order number; returns without one are covered further down.
+
+[5] travel-and-expense-policy.pdf, p. 2 (Submitting expenses)
+Submitting expenses Submit your expense report within 30 days of the end of a trip, or of the purchase for other expenses. Approved expenses are paid with the next regular payroll. Expenses submitted more than 90 days after they were incurred are not reimbursed.
+
+Question: I mailed back a jacket last week. When will the money show up on my card?",yes,595,64,4.0,llama3.2:3b,sections-4000,5
+q39,How much do I have to spend for free delivery?,shipping-faq.md,"$75 or more, after discounts and before tax, for free standard shipping.","According to [1], the $75 free-shipping threshold is measured after discounts and before tax.",yes,yes,[1] shipping-faq.md (What shipping options do you offer?),,"Sources:
+
+[1] shipping-faq.md (What shipping options do you offer?)
+What shipping options do you offer? | Option | Delivery time | Cost | |---|---|---| | Standard | 3-5 business days | $6.95, free on orders of $75 or more | | Expedited | 2 business days | $14.95 | | Overnight | Next business day | $29.95 | The $75 free-shipping threshold is measured after discounts and before tax. Delivery times start when the order ships, not when it is placed.
+
+[2] travel-and-expense-policy.pdf, p. 2 (Ground transportation)
+Ground transportation Use public transit, taxis or ride-hailing between airports, hotels and meetings. Rental cars should be compact or midsize. When you drive your own car for business, claim mileage at $0.67 per mile instead of fuel costs. The commute between your home and your usual workplace cannot be claimed.
+
+[3] loyalty-program-terms.pdf, p. 1 (Membership tiers)
+Membership tiers Tiers are based on what you spend in a calendar year: - Base: every member, from the day they join - Ridge: $500 or more in a year. Free standard shipping on every order, with no minimum. - Summit: $1,500 or more in a year. Free expedited shipping, early access to sales, and an extended return window (see the Returns and Refunds Policy). When you reach a tier, you keep it for the rest of that year and all of the following year.
+
+[4] travel-and-expense-policy.pdf, p. 1 (Meals)
+Meals The daily meal allowance for domestic travel is $65: up to $15 for breakfast, $20 for lunch and $30 for dinner. On the first and last day of a trip, you can claim 75% of the daily allowance. Meals provided by a conference or included in a hotel rate cannot also be claimed. Alcohol is not reimbursed, except at client dinners that a vice president approved in advance.
+
+[5] shipping-faq.md (Can I pick up my online order in a store?)
+Can I pick up my online order in a store? Yes, for free. Choose a store at checkout and we email you when the order is ready, usually within 2 hours during store hours. Orders are held for 7 days, then canceled and refunded.
+
+Question: How much do I have to spend for free delivery?",yes,625,21,2.8,llama3.2:3b,sections-4000,5
+q40,What does it cost to get an order in two days?,shipping-faq.md,$14.95 for expedited shipping.,The cost to get an order in two days is $14.95. [1],yes,yes,[1] shipping-faq.md (What shipping options do you offer?),,"Sources:
+
+[1] shipping-faq.md (What shipping options do you offer?)
+What shipping options do you offer? | Option | Delivery time | Cost | |---|---|---| | Standard | 3-5 business days | $6.95, free on orders of $75 or more | | Expedited | 2 business days | $14.95 | | Overnight | Next business day | $29.95 | The $75 free-shipping threshold is measured after discounts and before tax. Delivery times start when the order ships, not when it is placed.
+
+[2] shipping-faq.md (Can I pick up my online order in a store?)
+Can I pick up my online order in a store? Yes, for free. Choose a store at checkout and we email you when the order is ready, usually within 2 hours during store hours. Orders are held for 7 days, then canceled and refunded.
+
+[3] gear-rental-faq.md (How does weekend pricing work?)
+How does weekend pricing work? Pick up on Friday after 3 p.m. and return by noon on Monday, and you pay for 2 days instead of 3.
+
+[4] price-match-policy.md (Can I get a price adjustment after I buy?)
+Can I get a price adjustment after I buy? Yes. If we lower our own price, or you find a qualifying lower price elsewhere, within 14 days of your purchase, we refund the difference. Bring your receipt to a store, or send your order number through the price adjustment form on our website. For online orders, the 14 days count from the delivery date.
+
+[5] returns-and-refunds-policy.pdf, p. 1 (Return window)
+Return window Unused items can be returned within 45 days of purchase for store purchases, or within 45 days of delivery for online orders. Trailhead Rewards members in the Summit tier have 90 days. Bring the receipt or order number; returns without one are covered further down.
+
+Question: What does it cost to get an order in two days?",yes,538,19,1.9,llama3.2:3b,sections-4000,5
+q41,"Tracking says my package was dropped off, but it isn't here. Is there a deadline to report it?",shipping-faq.md,Contact customer service within 30 days of the expected delivery date.,"According to the sources, there is no specific deadline to report a missing package. However, it is recommended to check with neighbors and around the delivery address, and contact customer service within 30 days of the expected delivery date. [1]",no,partial,"[1] shipping-faq.md (My package says delivered, but I don't have it. What now?)",,"Sources:
+
+[1] shipping-faq.md (My package says delivered, but I don't have it. What now?)
+My package says delivered, but I don't have it. What now? Check with neighbors and around the delivery address, then contact customer service within 30 days of the expected delivery date. We open a claim with the carrier, which takes up to 10 business days, and then send a replacement or a refund.
+
+[2] returns-and-refunds-policy.pdf, p. 2 (Damaged or wrong items)
+Damaged or wrong items Tell us within 14 days of delivery if an item arrives damaged or is not what you ordered. Send a photo through your order page or to help@tallowmere.example, and we ship a replacement at no cost, usually within 2 business days. Tallowmere Outfitters - Returns and Refunds Policy - Page 2 of 2
+
+[3] it-helpdesk-faq.md (A register is down in my store. Who do I call?)
+A register is down in my store. Who do I call? Call the store support line at extension 4400. A register that cannot take payments is a priority 1 issue, and a technician responds within 15 minutes, seven days a week, during store hours.
+
+[4] returns-and-refunds-policy.pdf, p. 1 (Return window)
+Return window Unused items can be returned within 45 days of purchase for store purchases, or within 45 days of delivery for online orders. Trailhead Rewards members in the Summit tier have 90 days. Bring the receipt or order number; returns without one are covered further down.
+
+[5] returns-and-refunds-policy.pdf, p. 1 (When refunds are paid)
+When refunds are paid Refunds go back to the original payment method. For mail returns, we issue the refund within 5 business days after the package arrives at our distribution center. For store returns, we issue it at the counter. Card issuers can take another 3 to 10 business days to show a refund on your statement. Original shipping charges are refunded only when the return is caused by our mistake. Tallowmere Outfitters - Returns and Refunds Policy - Page 1 of 2
+
+Question: Tracking says my package was dropped off, but it isn't here. Is there a deadline to report it?",yes,600,49,3.5,llama3.2:3b,sections-4000,5
+q42,How much cash should each till have in it when the store opens?,store-opening-and-closing-procedures.md,$200.,"According to the store-opening-and-closing-procedures.md, every drawer starts the day with a $200 float. [2]",yes,yes,[2] store-opening-and-closing-procedures.md (Opening the store > Opening steps),,"Sources:
+
+[1] store-opening-and-closing-procedures.md (Closing the store > Closing steps)
+Closing steps 1. Make a final announcement 15 minutes before closing, and lock the doors at closing time once the last customer has left. 2. Two employees count each register together and sign the count sheet. 3. Put cash and checks in the deposit bag. The store safe may hold up to $2,000 overnight; anything above that goes to the bank's night deposit the same evening. 4. Walk the sales floor, fitting rooms and restrooms to make sure no one is left inside. 5. Set the alarm and lock up together, then walk to your cars together.
+
+[2] store-opening-and-closing-procedures.md (Opening the store > Opening steps)
+Opening steps 1. Look for signs of a break-in before you unlock. If anything looks wrong, do not go in: call the police, then the on-call store manager. 2. Disarm the alarm with your personal code. Never share alarm codes; the alarm log shows whose code was used. 3. Count each register drawer. Every drawer starts the day with a $200 float. Report any difference over $5 to the store manager. 4. Turn on the lights and sign in to the point-of-sale system. 5. Check the rental desk for reservations due for pickup today. 6. Hold the daily team huddle 20 minutes before opening.
+
+[3] store-opening-and-closing-procedures.md (Opening the store > Who opens?)
+Who opens? Two employees open together, arriving 45 minutes before opening time, and one of them must be a manager or key holder. Never open alone: if your partner is late, wait in your car and call the store manager.
+
+[4] gear-rental-faq.md (Is there a deposit?)
+Is there a deposit? We place a hold on a credit card when you pick up: $200 for kayaks and paddleboards, and $100 for all other gear. The hold is released when the gear comes back in good condition. Debit cards and cash are not accepted for the deposit.
+
+[5] store-opening-and-closing-procedures.md (Store Opening and Closing Procedures)
+Store Opening and Closing Procedures These steps apply to all three stores. Following them every day keeps people, cash and inventory safe.
+
+Question: How much cash should each till have in it when the store opens?",yes,618,27,2.8,llama3.2:3b,sections-4000,5
+q43,"If a snowstorm closes the store, do I still get paid for my shift?",store-opening-and-closing-procedures.md,"Yes, employees are paid for their scheduled shift if the store closes.","According to the store-opening-and-closing-procedures.md, if the store closes due to a weather-related event like a snowstorm, employees are notified through the scheduling app and are paid for their scheduled shift. [1]",yes,yes,[1] store-opening-and-closing-procedures.md (Weather and emergency closures),,"Sources:
+
+[1] store-opening-and-closing-procedures.md (Weather and emergency closures)
+Weather and emergency closures The regional manager decides on weather closures by 6 a.m. Employees are notified through the scheduling app, and are paid for their scheduled shift if the store closes.
+
+[2] employee-handbook-time-off.md (Company holidays)
+Company holidays We observe 10 paid holidays: New Year's Day, Martin Luther King Jr. Day, Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day, the day after Thanksgiving, Christmas Eve (half day) and Christmas Day. Store employees who work on a company holiday are paid 1.5 times their regular rate for the hours worked.
+
+[3] company-overview-faq.md (What are the store hours?)
+What are the store hours? All three stores are open from 9 a.m. to 8 p.m. Monday through Saturday, and from 10 a.m. to 6 p.m. on Sunday. Stores close at 4 p.m. on Christmas Eve, and are closed on Thanksgiving Day, Christmas Day and New Year's Day.
+
+[4] employee-handbook-time-off.md (Vacation > Are there times I can't take vacation?)
+Are there times I can't take vacation? Store and distribution center employees cannot take vacation between November 20 and January 2, our busiest season, unless their general manager approves an exception. Head office employees have no blackout period.
+
+[5] store-opening-and-closing-procedures.md (Closing the store > Closing steps)
+Closing steps 1. Make a final announcement 15 minutes before closing, and lock the doors at closing time once the last customer has left. 2. Two employees count each register together and sign the count sheet. 3. Put cash and checks in the deposit bag. The store safe may hold up to $2,000 overnight; anything above that goes to the bank's night deposit the same evening. 4. Walk the sales floor, fitting rooms and restrooms to make sure no one is left inside. 5. Set the alarm and lock up together, then walk to your cars together.
+
+Question: If a snowstorm closes the store, do I still get paid for my shift?",yes,573,46,3.2,llama3.2:3b,sections-4000,5
+q44,My flight home was cancelled and I'll be stuck two extra days. Who do I have to tell?,travel-and-expense-policy.pdf,"Your manager, about any change that keeps you away longer than planned; the 24-hour travel assistance line on your itinerary can rebook travel.",You should tell your manager about the change. [1],yes,yes,"[1] travel-and-expense-policy.pdf, p. 1 (Travel safety)",,"Sources:
+
+[1] travel-and-expense-policy.pdf, p. 1 (Travel safety)
+Travel safety If something goes wrong on a trip, such as a cancelled flight, a natural disaster or a medical emergency, call the 24-hour travel assistance line printed on the back of your TripDesk itinerary. It can rebook travel, find a doctor and contact your manager for you. Tell your manager about any change that Tallowmere Outfitters - Travel and Expense Policy - Page 1 of 2
+
+[2] gear-rental-faq.md (Can I cancel a reservation?)
+Can I cancel a reservation? Cancel at least 48 hours before pickup for a full refund. Later cancellations, and reservations that are never picked up, are charged one day's rent.
+
+[3] travel-and-expense-policy.pdf, p. 1 (Booking travel)
+Booking travel Book flights, hotels and rental cars through the TripDesk travel portal, so that we can reach you in an emergency and track spending. Trips need your manager's approval in TripDesk before you book. Book flights at least 14 days before departure when you can.
+
+[4] employee-handbook-time-off.md (Vacation > How do I request vacation?)
+How do I request vacation? Request vacation in the Waypoint HR portal. For 3 or more consecutive days, submit the request at least 2 weeks ahead. Your manager approves or declines it within 3 business days.
+
+[5] parental-leave-policy.pdf, p. 2 (Unpaid extension)
+Unpaid extension After paid leave ends, you can ask for up to 8 more weeks of unpaid leave. Your manager and the People Team decide based on the needs of the team, and your benefits continue during the unpaid extension. Tallowmere Outfitters - Parental Leave Policy - Page 2 of 2
+
+Question: My flight home was cancelled and I'll be stuck two extra days. Who do I have to tell?",no,517,13,1.9,llama3.2:3b,sections-4000,5
+q45,How long do I have after a business trip to claim my costs back?,travel-and-expense-policy.pdf,Submit the expense report within 30 days of the end of the trip; anything submitted more than 90 days later is not reimbursed.,"You have 30 days to submit your expense report after the end of a trip, or 30 days after the purchase for other expenses [3].",yes,yes,"[3] travel-and-expense-policy.pdf, p. 2 (Submitting expenses)",,"Sources:
+
+[1] travel-and-expense-policy.pdf, p. 2 (Company cards)
+Company cards Employees who travel 4 or more times a year can get a company credit card. The card is for business expenses only, and any personal charge must be repaid within 30 days.
+
+[2] travel-and-expense-policy.pdf, p. 1 (International travel)
+International travel Trips outside the United States and Canada need approval from your vice president as well as your manager, at least 30 days before departure. The daily meal allowance abroad is $85. Passport and visa fees for business trips are reimbursed. The company's travel insurance covers every trip booked through TripDesk, including medical emergencies and evacuation abroad, so you do not need to buy your own. Before you go, check with IT which devices you may take; some countries restrict encrypted laptops, and IT can lend you a travel laptop with no customer data on it.
+
+[3] travel-and-expense-policy.pdf, p. 2 (Submitting expenses)
+Submitting expenses Submit your expense report within 30 days of the end of a trip, or of the purchase for other expenses. Approved expenses are paid with the next regular payroll. Expenses submitted more than 90 days after they were incurred are not reimbursed.
+
+[4] returns-and-refunds-policy.pdf, p. 1 (When refunds are paid)
+When refunds are paid Refunds go back to the original payment method. For mail returns, we issue the refund within 5 business days after the package arrives at our distribution center. For store returns, we issue it at the counter. Card issuers can take another 3 to 10 business days to show a refund on your statement. Original shipping charges are refunded only when the return is caused by our mistake. Tallowmere Outfitters - Returns and Refunds Policy - Page 1 of 2
+
+[5] travel-and-expense-policy.pdf, p. 1 (Booking travel)
+Booking travel Book flights, hotels and rental cars through the TripDesk travel portal, so that we can reach you in an emergency and track spending. Trips need your manager's approval in TripDesk before you book. Book flights at least 14 days before departure when you can.
+
+Question: How long do I have after a business trip to claim my costs back?",yes,589,31,2.6,llama3.2:3b,sections-4000,5
+q46,How much do I get back per mile when I drive my own car for work?,travel-and-expense-policy.pdf,$0.67 per mile.,You get $0.67 per mile back when you drive your own car for work. [1],yes,yes,"[1] travel-and-expense-policy.pdf, p. 2 (Ground transportation)",,"Sources:
+
+[1] travel-and-expense-policy.pdf, p. 2 (Ground transportation)
+Ground transportation Use public transit, taxis or ride-hailing between airports, hotels and meetings. Rental cars should be compact or midsize. When you drive your own car for business, claim mileage at $0.67 per mile instead of fuel costs. The commute between your home and your usual workplace cannot be claimed.
+
+[2] remote-work-policy.md (What equipment and allowances do I get?)
+What equipment and allowances do I get? - A company laptop, monitor and headset. - A one-time home office stipend of $500 for things like a desk chair or a second monitor, available after 90 days of employment. - An internet allowance of $40 per month, paid through payroll. Equipment remains company property and must be returned within 10 days of your last day.
+
+[3] gear-rental-faq.md (What happens if something gets damaged?)
+What happens if something gets damaged? Normal wear is on us. Accidental damage is charged at our repair center rates, unless you bought the damage waiver: for $4 a day, it covers accidental damage up to $500 per rental. The waiver does not cover loss or theft.
+
+[4] remote-work-policy.md (Can I work fully remotely?)
+Can I work fully remotely? Fully remote work is an exception. It needs approval from your department's vice president and the People Team, and it is reviewed every year. Fully remote employees come to the head office at least once a quarter, with travel paid under the Travel and Expense Policy.
+
+[5] returns-and-refunds-policy.pdf, p. 1 (How to return an item)
+How to return an item In a store: bring the item to any of our three stores. Store returns are processed at the counter, and you leave with a receipt that shows the refund. By mail: start a return from your order page to get a prepaid return label. The label costs $7.50, which is deducted from your refund. Labels are free for exchanges and for items that arrived damaged or wrong. Boats and boards: kayaks, canoes and paddleboards can be returned in any store, or collected by our freight partner for $89.
+
+Question: How much do I get back per mile when I drive my own car for work?",yes,592,22,2.3,llama3.2:3b,sections-4000,5
+q47,My headlamp stopped working after a year and a half. Is it still covered?,warranty-and-repairs.pdf,"Yes, if it is a defect: electronics are covered for 2 years from the purchase date.","According to the warranty and repairs policy, electronics such as headlamps are covered for 2 years from the purchase date, whatever the brand. Since your headlamp is more than 2 years old, it is no longer covered under the warranty. [1]",no,no,"[1] warranty-and-repairs.pdf, p. 1",,"Sources:
+
+[1] warranty-and-repairs.pdf, p. 1
+Warranty and Repairs Policy Tallowmere Outfitters | Product Quality | Effective September 7, 2022 Our promise We stand behind what we sell. If gear fails because of a defect in materials or workmanship, we repair it, replace it or give you credit, as described below. Repairing first keeps gear on the trail and out of landfills. What is covered Tallowmere Trail products, our own brand, are covered for the lifetime of the product against defects in materials and workmanship. Electronics such as headlamps, GPS units and power banks are covered for 2 years from the purchase date, whatever the brand. Other brands are covered by their manufacturer's warranty; during the first year after purchase, we handle the claim with the manufacturer for you. What is not covered - Normal wear and tear, such as worn fabric, faded colors or flattened insulation - Damage from accidents, misuse, animals, fire or improper care - Damage from long exposure to sunlight - Products used commercially or rented out to others - Alterations or repairs made by anyone other than our repair center How to make a warranty claim Submit a claim through the warranty form on our website or at any store. Include your order number or receipt, and photos that show the problem. We review claims within 5 business days. If we need to see the item, we send a free shipping label, or you can drop it off at a store. What happens next We try to repair the item first. If it cannot be repaired, we replace it with the same product or the closest current model. If the product has been discontinued and nothing comparable is available, we give store credit for the price you paid. Paid repairs The repair center at our Harrow Bay store also repairs gear that is out of warranty or damaged by accident, whether or not you bought it from us. Typical prices: - Zipper slider replacement: $18 - Seam repair: from $25 - Tent pole section replacement: $12 per section - Patch for a sleeping pad or inflatable kayak: $15 Repairs usually take 10 to 15 business days. We give you a quote before starting any paid repair over Tallowmere Outfitters - Warranty and Repairs Policy - Page 1 of 2
+
+[2] benefits-overview.pdf, p. 1 (Insurance)
+Insurance - Life insurance: coverage of 1 times your annual salary, at no cost to you. You can buy more for yourself and your family. - Short-term disability: 60% of your pay for up to 12 weeks, starting after a 7-day waiting period, at no cost to you. - Long-term disability: 60% of your pay, starting after 90 days of disability, at no cost to you.
+
+[3] benefits-overview.pdf, p. 1
+Dental and vision The company pays 100% of the premium for employee-only dental and vision coverage. You pay the difference for dependent coverage. Saving for retirement You can join the 401(k) plan after 60 days of employment. The company matches 100% of the first 4% of pay that you contribute. Company matching contributions vest over 3 years, one third each year; your own contributions are always yours.
+
+[4] benefits-overview.pdf, p. 2 (Open enrollment and life events)
+Open enrollment and life events You choose or change benefits during open enrollment, which runs from November 1 to 15 each year, for coverage starting January 1. After a qualifying life event, such as marriage, a birth or adoption, or losing other coverage, you have 30 days to make changes. Tallowmere Outfitters - Benefits Overview 2026 - Page 2 of 2
+
+[5] travel-and-expense-policy.pdf, p. 1 (Travel safety)
+Travel safety If something goes wrong on a trip, such as a cancelled flight, a natural disaster or a medical emergency, call the 24-hour travel assistance line printed on the back of your TripDesk itinerary. It can rebook travel, find a doctor and contact your manager for you. Tell your manager about any change that Tallowmere Outfitters - Travel and Expense Policy - Page 1 of 2
+
+Question: My headlamp stopped working after a year and a half. Is it still covered?",yes,1013,54,4.8,llama3.2:3b,sections-4000,5
+q48,How much does it cost to fix a jacket zipper that won't close?,warranty-and-repairs.pdf,$18 for a zipper slider replacement.,The cost to fix a jacket zipper that won't close is $18. [1],yes,yes,"[1] warranty-and-repairs.pdf, p. 2",,"Sources:
+
+[1] warranty-and-repairs.pdf, p. 2
+$50. Tallowmere Outfitters - Warranty and Repairs Policy - Page 2 of 2
+
+[2] warranty-and-repairs.pdf, p. 1
+Warranty and Repairs Policy Tallowmere Outfitters | Product Quality | Effective September 7, 2022 Our promise We stand behind what we sell. If gear fails because of a defect in materials or workmanship, we repair it, replace it or give you credit, as described below. Repairing first keeps gear on the trail and out of landfills. What is covered Tallowmere Trail products, our own brand, are covered for the lifetime of the product against defects in materials and workmanship. Electronics such as headlamps, GPS units and power banks are covered for 2 years from the purchase date, whatever the brand. Other brands are covered by their manufacturer's warranty; during the first year after purchase, we handle the claim with the manufacturer for you. What is not covered - Normal wear and tear, such as worn fabric, faded colors or flattened insulation - Damage from accidents, misuse, animals, fire or improper care - Damage from long exposure to sunlight - Products used commercially or rented out to others - Alterations or repairs made by anyone other than our repair center How to make a warranty claim Submit a claim through the warranty form on our website or at any store. Include your order number or receipt, and photos that show the problem. We review claims within 5 business days. If we need to see the item, we send a free shipping label, or you can drop it off at a store. What happens next We try to repair the item first. If it cannot be repaired, we replace it with the same product or the closest current model. If the product has been discontinued and nothing comparable is available, we give store credit for the price you paid. Paid repairs The repair center at our Harrow Bay store also repairs gear that is out of warranty or damaged by accident, whether or not you bought it from us. Typical prices: - Zipper slider replacement: $18 - Seam repair: from $25 - Tent pole section replacement: $12 per section - Patch for a sleeping pad or inflatable kayak: $15 Repairs usually take 10 to 15 business days. We give you a quote before starting any paid repair over Tallowmere Outfitters - Warranty and Repairs Policy - Page 1 of 2
+
+[3] gear-rental-faq.md (What happens if something gets damaged?)
+What happens if something gets damaged? Normal wear is on us. Accidental damage is charged at our repair center rates, unless you bought the damage waiver: for $4 a day, it covers accidental damage up to $500 per rental. The waiver does not cover loss or theft.
+
+[4] store-opening-and-closing-procedures.md (Closing the store > Closing steps)
+Closing steps 1. Make a final announcement 15 minutes before closing, and lock the doors at closing time once the last customer has left. 2. Two employees count each register together and sign the count sheet. 3. Put cash and checks in the deposit bag. The store safe may hold up to $2,000 overnight; anything above that goes to the bank's night deposit the same evening. 4. Walk the sales floor, fitting rooms and restrooms to make sure no one is left inside. 5. Set the alarm and lock up together, then walk to your cars together.
+
+[5] travel-and-expense-policy.pdf, p. 1 (Hotels)
+Hotels The nightly limit, before taxes, is $210 in most cities and $290 in high-cost cities: New York, San Francisco, Boston, Seattle and Washington, DC. When you attend a conference, stay in the conference hotel even if it costs more than the limit.
+
+Question: How much does it cost to fix a jacket zipper that won't close?",yes,933,19,3.4,llama3.2:3b,sections-4000,5
+q49,What's the heaviest thing I'm allowed to lift on my own?,workplace-safety-and-incident-reporting.pdf,"50 pounds; above that, use a team lift or a cart.",You are allowed to lift no more than 50 pounds on your own. [1],yes,yes,"[1] workplace-safety-and-incident-reporting.pdf, p. 1 (Lifting and carrying)",,"Sources:
+
+[1] workplace-safety-and-incident-reporting.pdf, p. 1 (Lifting and carrying)
+Lifting and carrying Do not lift more than 50 pounds on your own; use a team lift or a cart. Kayaks and canoes are always carried by two people, even when they weigh less than 50 pounds, because of their length.
+
+[2] workplace-safety-and-incident-reporting.pdf, p. 1 (Forklifts and powered equipment)
+Forklifts and powered equipment Only certified operators may use forklifts and powered pallet jacks at the distribution center. Certification includes a practical test and must be renewed every 3 years. Inspect the equipment before every shift, and take it out of service if anything is wrong.
+
+[3] parental-leave-policy.pdf, p. 2 (Support at work)
+Support at work Every site has a private lactation room with a lock, a chair, a refrigerator and a power outlet. Lactation breaks are paid and do not need to be scheduled in advance.
+
+[4] shipping-faq.md (Are there items you can only ship by ground?)
+Are there items you can only ship by ground? Fuel canisters and bear spray are hazardous materials. They ship by ground within the contiguous United States only, so they cannot go to Alaska, Hawaii or Canada, and they cannot be sent expedited or overnight.
+
+[5] workplace-safety-and-incident-reporting.pdf, p. 1 (Ladders)
+Ladders Keep three points of contact while climbing, and never stand on the top step of a stepladder. Lock rolling ladders before you climb them.
+
+Question: What's the heaviest thing I'm allowed to lift on my own?",yes,474,19,2.0,llama3.2:3b,sections-4000,5
+q50,"I slipped in the stockroom but I'm fine. Do I still need to report it, and by when?",workplace-safety-and-incident-reporting.pdf,"Yes, every injury and near miss must be reported within 24 hours.","You should report the incident, and you should do so within 24 hours, using the incident form in the Waypoint HR portal or the paper form kept with each first aid kit [3].",yes,yes,"[3] workplace-safety-and-incident-reporting.pdf, p. 1 (Reporting injuries and near misses)",,"Sources:
+
+[1] performance-review-process.md (When do reviews happen?)
+When do reviews happen? | Cycle | Month | Includes a rating | |---|---|---| | Spring check-in | April | No | | Annual review | October | Yes | Employees who are still in their 90-day introductory period when a cycle starts skip that cycle.
+
+[2] returns-and-refunds-policy.pdf, p. 2 (Returns without a receipt)
+Returns without a receipt Without a receipt or order number, we offer store credit for the lowest price the item sold for in the last 60 days. A government photo ID is required, and each customer can make up to 3 returns without a receipt in any 12-month period.
+
+[3] workplace-safety-and-incident-reporting.pdf, p. 1 (Reporting injuries and near misses)
+Reporting injuries and near misses Report every injury, however small, and every near miss within 24 hours, using the incident form in the Waypoint HR portal or the paper form kept with each first aid kit. For a serious injury, call 911 first, then tell the manager on duty right away. Reports help us fix hazards before someone else gets hurt, and no one is ever disciplined for reporting.
+
+[4] code-of-conduct.pdf, p. 2
+Raising concerns If you see something that may break this code or the law, talk to your manager, the People Team or the Ethics team. You can also use the Ethics Line, which an independent company runs 24 hours a day at (360) 555-0199 and through a web form. Reports to the Ethics Line can be anonymous. The Ethics team starts looking into every report within 5 business days. No retaliation We do not tolerate retaliation against anyone who raises a concern in good faith or helps with an investigation. Retaliation is itself a serious breach of this code. Breaking the code Breaking this code can lead to disciplinary action, up to and including termination of employment, and in some cases to legal action. Yearly acknowledgment Every employee reads this code and confirms it in the Waypoint HR portal when they join, and again by January 31 every year. Tallowmere Outfitters - Code of Conduct - Page 2 of 2
+
+[5] travel-and-expense-policy.pdf, p. 2 (Submitting expenses)
+Submitting expenses Submit your expense report within 30 days of the end of a trip, or of the purchase for other expenses. Approved expenses are paid with the next regular payroll. Expenses submitted more than 90 days after they were incurred are not reimbursed.
+
+Question: I slipped in the stockroom but I'm fine. Do I still need to report it, and by when?",yes,671,40,3.3,llama3.2:3b,sections-4000,5
+u01,Do employees get free parking at the head office?,,,I don't know.,yes,yes,none (the model says it doesn't know),,"Sources:
+
+[1] remote-work-policy.md (Can I work fully remotely?)
+Can I work fully remotely? Fully remote work is an exception. It needs approval from your department's vice president and the People Team, and it is reviewed every year. Fully remote employees come to the head office at least once a quarter, with travel paid under the Travel and Expense Policy.
+
+[2] remote-work-policy.md (Remote and Hybrid Work Policy)
+Remote and Hybrid Work Policy Store and distribution center jobs are on site. This policy covers head office roles, most of which are hybrid.
+
+[3] remote-work-policy.md (How does hybrid work?)
+How does hybrid work? Hybrid employees work at the head office on Tuesdays and Thursdays, our anchor days, and choose where to work on the other days. Teams can agree on extra office days for planning sessions or launches. Everyone should be available for meetings during core hours, 10 a.m. to 3 p.m. Pacific Time.
+
+[4] employee-handbook-time-off.md (Vacation > Are there times I can't take vacation?)
+Are there times I can't take vacation? Store and distribution center employees cannot take vacation between November 20 and January 2, our busiest season, unless their general manager approves an exception. Head office employees have no blackout period.
+
+[5] it-helpdesk-faq.md (Is there Wi-Fi for guests?)
+Is there Wi-Fi for guests? Yes. Guests at the head office and in the stores can use the Tallowmere-Guest network. Never connect a work laptop to it; work laptops connect automatically to the staff network.
+
+Question: Do employees get free parking at the head office?",,454,6,1.4,llama3.2:3b,sections-4000,5
+u02,What is the password for the guest Wi-Fi?,,,I don't know. [1],yes,yes,none (the model says it doesn't know),,"Sources:
+
+[1] it-helpdesk-faq.md (Is there Wi-Fi for guests?)
+Is there Wi-Fi for guests? Yes. Guests at the head office and in the stores can use the Tallowmere-Guest network. Never connect a work laptop to it; work laptops connect automatically to the staff network.
+
+[2] it-security-policy.pdf, p. 1 (Multi-factor authentication)
+Multi-factor authentication Multi-factor authentication is required for email, the Waypoint HR portal, the VPN and every administrator account, including point-of-sale administration. Use the authenticator app or a hardware security key. Text message codes are not allowed, because they can be intercepted.
+
+[3] it-helpdesk-faq.md (How do I reset my password?)
+How do I reset my password? Use ""Forgot password"" on the sign-in page and confirm with your authenticator app. After 10 failed sign-in attempts your account locks for 30 minutes and then unlocks automatically; the help desk can unlock it sooner.
+
+[4] it-security-policy.pdf, p. 1 (Passwords)
+Passwords Use a passphrase of at least 14 characters for every work account, and never reuse a work password anywhere else. Passwords do not expire on a schedule; change yours right away if you think someone else may know it. Your last 10 passwords cannot be reused.
+
+[5] store-opening-and-closing-procedures.md (Opening the store > Opening steps)
+Opening steps 1. Look for signs of a break-in before you unlock. If anything looks wrong, do not go in: call the police, then the on-call store manager. 2. Disarm the alarm with your personal code. Never share alarm codes; the alarm log shows whose code was used. 3. Count each register drawer. Every drawer starts the day with a $200 float. Report any difference over $5 to the store manager. 4. Turn on the lights and sign in to the point-of-sale system. 5. Check the rental desk for reservations due for pickup today. 6. Hold the daily team huddle 20 minutes before opening.
+
+Question: What is the password for the guest Wi-Fi?",,558,9,1.9,llama3.2:3b,sections-4000,5
+u03,Can I wear jeans to work at headquarters?,,,I don't know.,yes,yes,none (the model says it doesn't know),,"Sources:
+
+[1] remote-work-policy.md (Remote and Hybrid Work Policy)
+Remote and Hybrid Work Policy Store and distribution center jobs are on site. This policy covers head office roles, most of which are hybrid.
+
+[2] remote-work-policy.md (Can I work fully remotely?)
+Can I work fully remotely? Fully remote work is an exception. It needs approval from your department's vice president and the People Team, and it is reviewed every year. Fully remote employees come to the head office at least once a quarter, with travel paid under the Travel and Expense Policy.
+
+[3] workplace-safety-and-incident-reporting.pdf, p. 1 (Scope)
+Scope This policy applies at our stores, the Fenwick Yard distribution center and the head office. Everyone is responsible for working safely and for stopping any work that looks unsafe.
+
+[4] remote-work-policy.md (What are the rules for working in public places?)
+What are the rules for working in public places? Use the company VPN on any network that is not your home or the office, and keep customer and employee data off screens that others can see. The IT Security Policy has the full rules.
+
+[5] onboarding-checklist.md (First day)
+First day - Arrive at 9 a.m. Head office employees go to reception; store and distribution center employees go to their site manager. - Have your ID badge photo taken. - Pick up your laptop from IT and set up multi-factor authentication. - Complete your tax forms and the I-9 employment eligibility form. Bring your identity documents: the I-9 must be completed within 3 business days of your start date.
+
+Question: Can I wear jeans to work at headquarters?",,459,6,1.4,llama3.2:3b,sections-4000,5
+u04,Do you offer gift wrapping on online orders?,,,I don't know.,yes,yes,none (the model says it doesn't know),,"Sources:
+
+[1] shipping-faq.md (Can I pick up my online order in a store?)
+Can I pick up my online order in a store? Yes, for free. Choose a store at checkout and we email you when the order is ready, usually within 2 hours during store hours. Orders are held for 7 days, then canceled and refunded.
+
+[2] returns-and-refunds-policy.pdf, p. 2 (Gifts)
+Gifts With a gift receipt, the recipient gets store credit, or can ask us to refund the person who bought the gift. Gift returns use the same return window, counted from the purchase date on the gift receipt.
+
+[3] code-of-conduct.pdf, p. 1
+Code of Conduct Tallowmere Outfitters | Legal and Ethics | Effective March 15, 2021 Why we have a code Our customers trust us to give honest advice, and we trust each other to do the right thing when no one is watching. This code describes what that means in practice. It applies to every employee, and to contractors and temporary staff while they work with us. Respect at work We do not tolerate harassment, bullying or discrimination based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status or any other protected characteristic. This applies at our sites, at company events, on business trips and online. Conflicts of interest Avoid situations where your personal interests could influence your decisions at work. Tell your manager and the Ethics team about: - A second job with a competitor, supplier or customer of Tallowmere Outfitters - A financial interest of more than 1% in a competitor or supplier - A family member or partner in your reporting line, or working for a supplier you deal with Disclosing a conflict is not wrongdoing. Hiding one is. Gifts and entertainment You can accept gifts worth up to $75 in total from any one supplier in a calendar year. Never accept cash, gift cards, or anything offered in exchange for a decision. Business meals are fine when there is a business purpose and they are not lavish. If you are offered something worth more than $75, decline it or report it to the Ethics team, who decide whether it can be kept, donated or returned. Supplier pro deals Many brands offer our employees discounted pro deals. You can use them for gear for yourself and your household. Reselling gear bought through a pro deal is not allowed. Protecting information Use customer and employee information only for the job you are doing, and never share it outside the company. Do not discuss unannounced products, sales results or company plans with anyone outside the company. Social media You may say that you work here, but do not speak on behalf of the company unless Communications has asked you to. Never post customer information, or photos of customers without their permission. Tallowmere Outfitters - Code of Conduct - Page 1 of 2
+
+[4] returns-and-refunds-policy.pdf, p. 2 (Exchanges)
+Exchanges Exchanges for a different size or color are free. For mail exchanges, we ship the replacement as soon as the carrier scans your return package, so you do not have to wait for it to reach us.
+
+[5] returns-and-refunds-policy.pdf, p. 1 (Overview)
+Overview This policy explains how customers return or exchange items bought from Tallowmere Outfitters in our stores or online, and how and when refunds are paid. It applies to all three stores and to orders shipped from our distribution center. Gear rentals have their own terms in the Gear Rental FAQ.
+
+Question: Do you offer gift wrapping on online orders?",,866,6,2.9,llama3.2:3b,sections-4000,5
+u05,Will the company pay for an evening university course I want to take?,,,I don't know. The sources do not mention anything about the company paying for personal courses or expenses.,yes,yes,none,,"Sources:
+
+[1] travel-and-expense-policy.pdf, p. 1 (Scope)
+Scope This policy covers business travel and work expenses for all employees. Spend company money as carefully as you would your own. When something is not covered here, ask Finance before you spend, not after.
+
+[2] travel-and-expense-policy.pdf, p. 2 (Company cards)
+Company cards Employees who travel 4 or more times a year can get a company credit card. The card is for business expenses only, and any personal charge must be repaid within 30 days.
+
+[3] remote-work-policy.md (What equipment and allowances do I get?)
+What equipment and allowances do I get? - A company laptop, monitor and headset. - A one-time home office stipend of $500 for things like a desk chair or a second monitor, available after 90 days of employment. - An internet allowance of $40 per month, paid through payroll. Equipment remains company property and must be returned within 10 days of your last day.
+
+[4] code-of-conduct.pdf, p. 2
+Raising concerns If you see something that may break this code or the law, talk to your manager, the People Team or the Ethics team. You can also use the Ethics Line, which an independent company runs 24 hours a day at (360) 555-0199 and through a web form. Reports to the Ethics Line can be anonymous. The Ethics team starts looking into every report within 5 business days. No retaliation We do not tolerate retaliation against anyone who raises a concern in good faith or helps with an investigation. Retaliation is itself a serious breach of this code. Breaking the code Breaking this code can lead to disciplinary action, up to and including termination of employment, and in some cases to legal action. Yearly acknowledgment Every employee reads this code and confirms it in the Waypoint HR portal when they join, and again by January 31 every year. Tallowmere Outfitters - Code of Conduct - Page 2 of 2
+
+[5] travel-and-expense-policy.pdf, p. 1 (Flights)
+Flights Fly economy on flights under 6 hours. Premium economy is allowed on flights of 6 hours or more. Business class needs approval from the Chief Financial Officer. Paid seat upgrades and airport lounge passes are not reimbursed, but one checked bag per trip is.
+
+Question: Will the company pay for an evening university course I want to take?",,622,22,2.5,llama3.2:3b,sections-4000,5

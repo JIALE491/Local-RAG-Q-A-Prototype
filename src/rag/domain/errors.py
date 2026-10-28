@@ -33,8 +33,12 @@ class DocumentLoadError(RagError):
         self.path = path
 
 
+class NoDocumentsError(RagError):
+    """There is nothing to index: no supported documents, or no text in them."""
+
+
 class ModelUnavailableError(RagError):
-    """Ollama is not reachable, or the model has not been pulled."""
+    """Ollama is not reachable or too old, or the model has not been pulled."""
 
 
 class EmbeddingError(RagError):
@@ -43,6 +47,15 @@ class EmbeddingError(RagError):
 
 class GenerationError(RagError):
     """The chat model returned an error or an empty reply."""
+
+
+class PromptTooLongError(GenerationError):
+    """The prompt does not fit in the chat model's context window, so it was not answered."""
+
+
+class AnswerTooLongError(GenerationError):
+    """The answer ran out of room, either at the answer limit or at the end of the context
+    window, so it would have been cut off."""
 
 
 class VectorStoreError(RagError):
@@ -58,4 +71,13 @@ class IndexMismatchError(VectorStoreError):
 
 
 class QuestionSetError(RagError):
-    """The test-question CSV is missing or malformed."""
+    """The test set (questions and their facts) is missing or malformed, or names a document
+    that is not in the index."""
+
+
+class ResultsWriteError(RagError):
+    """An evaluation results file could not be written."""
+
+
+class GradesError(RagError):
+    """The graded answers file is missing, not fully graded, or does not match the test set."""

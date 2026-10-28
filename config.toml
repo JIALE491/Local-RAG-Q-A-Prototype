@@ -4,20 +4,39 @@
 
 [paths]
 docs_dir = "data/docs"                     # the PDFs and markdown files to index
-index_dir = "index"                        # chromadb files: one collection per chunking strategy
+index_dir = "index"                        # chromadb files: one folder per chunking strategy
 questions_csv = "data/eval/questions.csv"  # test set: id, question, expected_doc
+facts_csv = "data/eval/facts.csv"          # the facts each expected answer relies on
 results_dir = "results"                    # evaluation and answer CSVs
 
 [ollama]
 host = "http://127.0.0.1:11434"
 embed_model = "nomic-embed-text"
+embed_document_prefix = "search_document: "  # task prefixes nomic-embed-text expects;
+embed_query_prefix = "search_query: "        # set both to "" for a model without them
 chat_model = "llama3.2:3b"
+chat_context_tokens = 4096   # prompt plus answer; a prompt that does not fit is an error, never cut
+chat_max_answer_tokens = 512 # a longer answer is an error, never cut off
+chat_temperature = 0         # 0 always picks the most likely next token, so answers repeat
 timeout_s = 120     # per request; the first request also loads the model into memory
 keep_alive = "10m"  # how long Ollama keeps a model loaded after a request (its default: 5m)
 
 [ingest]
 batch_size = 32     # chunks per embedding request
 
+[chunking]
+strategy = "sections" # the default for every command (--strategy overrides); see decision 40
+
+[chunking.fixed]      # strategy 1: windows of whole words inside each section or page
+size = 300            # maximum characters per chunk
+overlap = 50          # characters shared by consecutive chunks
+
+[chunking.sentences]  # strategy 2: whole sentences packed into chunks, never cut
+size = 300            # maximum characters per chunk
+
+[chunking.sections]   # strategy 3: one chunk per section, or per page without bookmarks
+max_size = 4000       # longer sections are split at sentence boundaries
+
 [retrieval]
-top_k = 4           # chunks given to the chat model (charter: 3-5)
+top_k = 5           # chunks given to the chat model (charter: 3-5); see decision 42
 eval_k = 3          # hit-rate cut-off: is the right document among the top 3 chunks?

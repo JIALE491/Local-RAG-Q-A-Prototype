@@ -8,11 +8,7 @@ from tests.fakes import cosine_similarity
 
 
 class EmbedderContract:
-    """Subclass and override the `embedder` fixture."""
-
-    @pytest.fixture
-    def embedder(self) -> Embedder:
-        raise NotImplementedError
+    """Subclass and provide an `embedder` fixture (yield it if it needs closing afterwards)."""
 
     def test_has_a_model_name(self, embedder: Embedder) -> None:
         assert embedder.model_name.strip()

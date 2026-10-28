@@ -35,6 +35,7 @@ RULES = {
     "log.py": Rule((), third_party=False),
     "__init__.py": Rule((), third_party=False),
     "cli.py": Rule(("rag",), third_party=True),
+    "__main__.py": Rule(("rag.cli",), third_party=False),
 }
 
 MODULES = sorted(PACKAGE.rglob("*.py"))

@@ -1,0 +1,56 @@
+id,question,expected_doc,expected_answer
+q01,Does the company add anything if I put part of my paycheck aside for when I retire?,benefits-overview.pdf,"Yes. It matches 100% of the first 4% of pay you contribute; you can join after 60 days, and the match vests over 3 years."
+q02,"If I have to stop working for medical reasons late in my pregnancy, how much of my salary is paid?",benefits-overview.pdf,"Short-term disability pays 60% of your pay for up to 12 weeks, after a 7-day waiting period, at no cost to you."
+q03,How big is the staff discount on the company's own brand of gear?,benefits-overview.pdf,40% off Tallowmere Trail products (30% off other regular-price merchandise).
+q04,A supplier wants to send me an expensive bottle of wine for the holidays. Is there a limit on what I can accept?,code-of-conduct.pdf,Gifts from any one supplier may total up to $75 in a calendar year; decline anything worth more or report it to the Ethics team.
+q05,Can I report something shady at work without giving my name?,code-of-conduct.pdf,"Yes. Reports to the Ethics Line, run by an independent company 24 hours a day at (360) 555-0199 or by web form, can be anonymous."
+q06,Am I allowed to sell gear I bought cheaply through a brand's staff program?,code-of-conduct.pdf,No. Pro-deal gear is for you and your household only; reselling it is not allowed.
+q07,Which of your three stores opened most recently?,company-overview-faq.md,"Ashcombe Junction, which opened in 2021."
+q08,Are your shops open on Thanksgiving?,company-overview-faq.md,"No. All stores are closed on Thanksgiving Day, as well as Christmas Day and New Year's Day."
+q09,"If I ask you to erase my personal information, how long will that take?",data-retention-policy.pdf,"Within 30 days, after the customer's identity is confirmed; order records needed for tax are kept until their retention period ends."
+q10,How long do the stores keep their security camera recordings?,data-retention-policy.pdf,"30 days, unless the footage is needed for an incident."
+q11,I applied for a job and didn't get it. How long will you keep my application?,data-retention-policy.pdf,"1 year after the position closes, or 2 years if you agreed to join the talent pool."
+q12,I've been here six years. How many vacation days do I get a year?,employee-handbook-time-off.md,20 days a year (5 to 9 years of service).
+q13,I work at one of the stores. Can I take a week off between Christmas and New Year?,employee-handbook-time-off.md,Not normally: store and distribution center employees cannot take vacation between November 20 and January 2 unless their general manager approves an exception.
+q14,How much per day to borrow a tent that sleeps four?,gear-rental-faq.md,$35 per day.
+q15,Do rewards members pay less when they rent equipment?,gear-rental-faq.md,"Yes, Trailhead Rewards members get 10% off all rentals."
+q16,Will you hold money on my card when I pick up a rented paddleboard?,gear-rental-faq.md,"Yes, a $200 hold on a credit card, released when the gear comes back in good condition; debit cards and cash are not accepted for the deposit."
+q17,Someone new is joining my team. How early should I order their computer?,it-helpdesk-faq.md,At least 5 business days before their start date.
+q18,I typed my password wrong too many times and now I'm locked out. How do I get back in?,it-helpdesk-faq.md,After 10 failed attempts the account locks for 30 minutes and then unlocks automatically; the help desk can unlock it sooner.
+q19,The card reader at my till stopped working on a busy Saturday. Who should I call?,it-helpdesk-faq.md,The store support line at extension 4400; a register that cannot take payments is priority 1 and a technician responds within 15 minutes.
+q20,How soon do I have to install system updates on my work laptop?,it-security-policy.pdf,"Within 14 days of release, and critical security patches within 72 hours."
+q21,Can I get my sign-in codes sent by text message?,it-security-policy.pdf,No. Text message codes are not allowed; use the authenticator app or a hardware security key.
+q22,How many points do I need before I get money off?,loyalty-program-terms.pdf,"200 points, which automatically become a $10 reward certificate."
+q23,I just signed up for the rewards program and my birthday is next week. Will I get the birthday treat this year?,loyalty-program-terms.pdf,Probably not: the birthday must be in your profile at least 30 days before your birthday month to get the $5 certificate that year.
+q24,"As a new hire, how long do I have to finish the required online courses?",onboarding-checklist.md,"Within 14 days of your start date (security awareness, harassment prevention and Gear 101)."
+q25,What does someone get for being a new employee's buddy?,onboarding-checklist.md,A $50 gift card when the 60-day buddy pairing ends.
+q26,My partner is having a baby and I'm not the main caregiver. How much paid leave can I take?,parental-leave-policy.pdf,6 weeks of fully paid leave as a secondary caregiver (each parent chooses; primary caregivers get 16 weeks).
+q27,How far ahead do I need to warn my manager before I go on leave for a new baby?,parental-leave-policy.pdf,"At least 30 days before the leave starts, or as soon as possible if the timing is unexpected."
+q28,"When my time off with the baby ends, can I come back on shorter days at first?",parental-leave-policy.pdf,"Yes, after primary caregiver leave: up to 4 weeks at 60% of your usual hours, on full pay."
+q29,Will I get a rating at my April review?,performance-review-process.md,No. The April cycle is a check-in without a rating; ratings are given at the annual review in October.
+q30,When does a raise from my yearly evaluation actually start?,performance-review-process.md,Merit increases take effect on January 1.
+q31,I bought boots last week and now your website sells them for less. Can I get the difference back?,price-match-policy.md,"Yes, if the price drops within 14 days of purchase (from delivery for online orders), the difference is refunded."
+q32,Will you match a lower price I saw from some random seller on a big shopping site?,price-match-policy.md,No. Prices from third-party sellers on marketplace websites are excluded.
+q33,"If I find three identical stoves cheaper somewhere else, will you match the price on all three?",price-match-policy.md,"No, only up to 2 units of the same item per customer."
+q34,Which days of the week do I need to be in the office?,remote-work-policy.md,Tuesdays and Thursdays.
+q35,Is there any money to help me set up a desk at home?,remote-work-policy.md,"Yes, a one-time $500 home office stipend after 90 days of employment, plus $40 a month for internet."
+q36,I'm at the highest level of the rewards program. How long do I have to bring back something I haven't used?,returns-and-refunds-policy.pdf,"90 days (Summit tier), instead of the usual 45 days."
+q37,The sleeping bag I ordered arrived torn. How many days do I have to let you know?,returns-and-refunds-policy.pdf,Within 14 days of delivery; send a photo and a replacement is shipped at no cost.
+q38,I mailed back a jacket last week. When will the money show up on my card?,returns-and-refunds-policy.pdf,"Within 5 business days after it reaches the distribution center, plus 3 to 10 business days for the card issuer to show it."
+q39,How much do I have to spend for free delivery?,shipping-faq.md,"$75 or more, after discounts and before tax, for free standard shipping."
+q40,What does it cost to get an order in two days?,shipping-faq.md,$14.95 for expedited shipping.
+q41,"Tracking says my package was dropped off, but it isn't here. Is there a deadline to report it?",shipping-faq.md,Contact customer service within 30 days of the expected delivery date.
+q42,How much cash should each till have in it when the store opens?,store-opening-and-closing-procedures.md,$200.
+q43,"If a snowstorm closes the store, do I still get paid for my shift?",store-opening-and-closing-procedures.md,"Yes, employees are paid for their scheduled shift if the store closes."
+q44,My flight home was cancelled and I'll be stuck two extra days. Who do I have to tell?,travel-and-expense-policy.pdf,"Your manager, about any change that keeps you away longer than planned; the 24-hour travel assistance line on your itinerary can rebook travel."
+q45,How long do I have after a business trip to claim my costs back?,travel-and-expense-policy.pdf,Submit the expense report within 30 days of the end of the trip; anything submitted more than 90 days later is not reimbursed.
+q46,How much do I get back per mile when I drive my own car for work?,travel-and-expense-policy.pdf,$0.67 per mile.
+q47,My headlamp stopped working after a year and a half. Is it still covered?,warranty-and-repairs.pdf,"Yes, if it is a defect: electronics are covered for 2 years from the purchase date."
+q48,How much does it cost to fix a jacket zipper that won't close?,warranty-and-repairs.pdf,$18 for a zipper slider replacement.
+q49,What's the heaviest thing I'm allowed to lift on my own?,workplace-safety-and-incident-reporting.pdf,"50 pounds; above that, use a team lift or a cart."
+q50,"I slipped in the stockroom but I'm fine. Do I still need to report it, and by when?",workplace-safety-and-incident-reporting.pdf,"Yes, every injury and near miss must be reported within 24 hours."
+u01,Do employees get free parking at the head office?,,
+u02,What is the password for the guest Wi-Fi?,,
+u03,Can I wear jeans to work at headquarters?,,
+u04,Do you offer gift wrapping on online orders?,,
+u05,Will the company pay for an evening university course I want to take?,,

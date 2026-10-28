@@ -12,14 +12,17 @@ from collections.abc import Callable, Sequence
 from dataclasses import dataclass
 
 from rag.domain.errors import (
+    AnswerTooLongError,
     EmbeddingError,
     GenerationError,
     IndexNotBuiltError,
     InvalidDataError,
+    PromptTooLongError,
     VectorStoreError,
 )
 from rag.domain.models import (
     Chunk,
+    Completion,
     Document,
     Embedding,
     IndexManifest,
@@ -77,24 +80,27 @@ class FakeEmbedder:
         norm = math.hypot(*vector)
         return [x / norm for x in vector]
 
+    def close(self) -> None:
+        """Nothing to release; here so the CLI can treat the fake like the real adapter."""
+
 
 class InMemoryIndex:
     """Brute-force cosine-similarity search over a list. Ties keep insertion order."""
 
     def __init__(self) -> None:
-        self._manifest: IndexManifest | None = None
         self._rows: list[tuple[Chunk, Embedding]] = []
         self._ids: set[str] = set()
         self._dim: int | None = None
+        self._rebuilding = False
+        self._manifest: IndexManifest | None = None
 
-    def reset(self, manifest: IndexManifest) -> None:
-        self._manifest = manifest
-        self._rows = []
-        self._ids = set()
-        self._dim = None
+    def begin_rebuild(self) -> None:
+        self._rows, self._ids, self._dim = [], set(), None
+        self._rebuilding = True
+        self._manifest = None
 
     def add(self, chunks: Sequence[Chunk], embeddings: Sequence[Embedding]) -> None:
-        self._require_built()
+        self._require_rebuild()
         if len(chunks) != len(embeddings):
             raise VectorStoreError(f"got {len(chunks)} chunks but {len(embeddings)} embeddings")
         ids = [c.chunk_id for c in chunks]
@@ -111,11 +117,20 @@ class InMemoryIndex:
         self._rows.extend((c, list(e)) for c, e in zip(chunks, embeddings, strict=True))
         self._ids.update(ids)
 
+    def finish_rebuild(self, manifest: IndexManifest) -> None:
+        self._require_rebuild()
+        self._rebuilding = False
+        self._manifest = manifest
+
     def query(self, embeddings: Sequence[Embedding], k: int) -> list[list[RetrievedChunk]]:
-        self._require_built()
+        self._require_finished()
         if k < 1:
             raise InvalidDataError(f"k must be 1 or more, got {k}")
         return [self._search(embedding, k) for embedding in embeddings]
+
+    def chunks(self) -> list[Chunk]:
+        self._require_finished()
+        return sorted((chunk for chunk, _ in self._rows), key=lambda c: (c.doc.doc_id, c.ordinal))
 
     def count(self) -> int:
         return len(self._rows)
@@ -135,34 +150,64 @@ class InMemoryIndex:
             for rank, (score, i) in enumerate(scored[:k], start=1)
         ]
 
-    def _require_built(self) -> None:
+    def _require_rebuild(self) -> None:
+        if not self._rebuilding:
+            raise VectorStoreError("no rebuild in progress", hint="call begin_rebuild() first")
+
+    def _require_finished(self) -> None:
         if self._manifest is None:
-            raise IndexNotBuiltError("the index has not been built", hint="run `rag ingest`")
+            reason = (
+                "the last rebuild has not finished"
+                if self._rebuilding
+                else "the index has not been built"
+            )
+            raise IndexNotBuiltError(reason, hint="run `rag ingest`")
 
 
 class FakeChatModel:
-    """Returns a fixed reply, or one computed from the prompt, and records every prompt."""
+    """Returns a fixed reply, or one computed from the prompt, and records every prompt.
+
+    Counts one token per word and keeps the same limits as the real adapter: a prompt
+    longer than the context raises PromptTooLongError, and a reply longer than the answer
+    limit, or than the room the prompt leaves, raises AnswerTooLongError.
+    """
 
     def __init__(
         self,
         reply: str | Callable[[str, str], str] = "I don't know.",
         *,
         model_name: str = "fake-chat",
+        context_tokens: int = 4096,
+        max_answer_tokens: int = 512,
     ) -> None:
         self._reply = reply
         self._model_name = model_name
+        self.context_tokens = context_tokens
+        self.max_answer_tokens = max_answer_tokens
         self.prompts: list[tuple[str, str]] = []
 
     @property
     def model_name(self) -> str:
         return self._model_name
 
-    def complete(self, *, system: str, user: str) -> str:
+    def complete(self, *, system: str, user: str) -> Completion:
         self.prompts.append((system, user))
+        prompt_tokens = len(system.split()) + len(user.split())
+        if prompt_tokens > self.context_tokens:
+            raise PromptTooLongError(
+                f"the prompt of {prompt_tokens} tokens does not fit in the "
+                f"{self.context_tokens}-token context"
+            )
         text = self._reply(system, user) if callable(self._reply) else self._reply
         if not text.strip():
             raise GenerationError("the model returned an empty reply")
-        return text
+        answer_tokens = len(text.split())
+        if answer_tokens > min(self.max_answer_tokens, self.context_tokens - prompt_tokens):
+            raise AnswerTooLongError(f"the answer of {answer_tokens} tokens was cut off")
+        return Completion(text=text, prompt_tokens=prompt_tokens, answer_tokens=answer_tokens)
+
+    def close(self) -> None:
+        """Nothing to release; here so the CLI can treat the fake like the real adapter."""
 
 
 @dataclass

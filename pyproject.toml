@@ -6,15 +6,23 @@ build-backend = "hatchling.build"
 name = "rag-prototype"
 version = "0.1.0"
 description = "Local RAG question answering over PDFs and markdown, measured stage by stage, on one laptop at zero cost."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
 dependencies = [
     "chromadb>=1.5.9,<2",
+    "httpx>=0.28.1,<1",  # the chat adapter calls Ollama's REST API directly
     "ollama>=0.6.3,<0.7",
     "pypdf>=6.21.3,<7",
 ]
 
+[project.scripts]
+rag = "rag.cli:main"
+
 [project.optional-dependencies]
 dev = [
+    "fpdf2==2.8.9",  # builds the sample PDFs from their text sources
     "mypy==2.4.0",
     "pytest==9.1.1",
     "pytest-cov==7.1.0",
@@ -52,17 +60,22 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**" = ["S101", "ARG"]  # asserts and unused fixture arguments are normal in tests
+"tests/**" = ["S101", "S106", "ARG"]  # asserts, dummy passwords, unused fixture arguments
+"scripts/**" = ["T201"]       # command-line scripts report progress with print()
+"src/rag/cli.py" = ["T201"]   # the CLI prints its results
 
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
+
+[tool.ruff.lint.isort]
+known-first-party = ["rag", "scripts", "tests"]
 
 [tool.mypy]
 python_version = "3.12"
 strict = true
 warn_unreachable = true
 enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
-files = ["src", "tests"]
+files = ["src", "tests", "scripts"]
 mypy_path = "src"
 
 [tool.pytest.ini_options]

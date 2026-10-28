@@ -9,7 +9,15 @@ against them, the fakes included.
 from collections.abc import Sequence
 from typing import Protocol
 
-from rag.domain.models import Chunk, Document, Embedding, IndexManifest, RetrievedChunk, SourceScan
+from rag.domain.models import (
+    Chunk,
+    Completion,
+    Document,
+    Embedding,
+    IndexManifest,
+    RetrievedChunk,
+    SourceScan,
+)
 
 
 class DocumentSource(Protocol):
@@ -62,47 +70,72 @@ class Embedder(Protocol):
 
 
 class VectorIndex(Protocol):
-    """One searchable collection of chunk embeddings.
+    """One searchable collection of chunk embeddings, rebuilt from scratch by every ingest.
 
-    Built with one chunking strategy and one embedding model, and stored with an
-    IndexManifest that records which.
+    A rebuild is begin_rebuild(), then add() for each batch, then finish_rebuild(manifest).
+    Searches work only after a finished rebuild, so a run that fails halfway leaves an
+    index that refuses to answer instead of one that silently misses documents. The
+    manifest records which chunking strategy and embedding model built the index.
     """
 
-    def reset(self, manifest: IndexManifest) -> None:
-        """Delete everything and start an empty index described by `manifest`."""
+    def begin_rebuild(self) -> None:
+        """Delete every chunk and the manifest, and start accepting add() calls.
+
+        Chunks from documents that were edited or deleted since the last run are gone after
+        this, so they can never linger in search results.
+        """
 
     def add(self, chunks: Sequence[Chunk], embeddings: Sequence[Embedding]) -> None:
         """Store chunks with their embeddings. All or nothing: a failed add stores nothing.
 
-        Raises IndexNotBuiltError before the first reset(), and VectorStoreError when the
-        two lengths differ, a vector has the wrong size, or a chunk id is already stored.
+        Raises VectorStoreError when no rebuild is in progress, when the two lengths differ,
+        when a vector has the wrong size, or when a chunk id was already added in this
+        rebuild. A repeated id means a chunking bug, so it is never silently overwritten.
+        """
+
+    def finish_rebuild(self, manifest: IndexManifest) -> None:
+        """Mark the rebuild complete and store `manifest`, making the index searchable.
+
+        Raises VectorStoreError when no rebuild is in progress.
         """
 
     def query(self, embeddings: Sequence[Embedding], k: int) -> list[list[RetrievedChunk]]:
         """The k most similar chunks for each query embedding, best first (rank 1).
 
         Takes a batch, so evaluating 50 questions is one call instead of 50. Returns fewer
-        than k results when the index holds fewer chunks. Raises IndexNotBuiltError before
-        the first reset(), VectorStoreError for a wrong vector size, and InvalidDataError
-        if k is below 1.
+        than k results when the index holds fewer chunks. Raises IndexNotBuiltError unless
+        the last rebuild finished, VectorStoreError for a wrong vector size, and
+        InvalidDataError if k is below 1.
+        """
+
+    def chunks(self) -> list[Chunk]:
+        """Every chunk of the last finished rebuild, sorted by document id, then position.
+
+        Raises IndexNotBuiltError unless the last rebuild finished.
         """
 
     def count(self) -> int:
-        """Number of stored chunks; 0 if the index has never been built."""
+        """Number of stored chunks: those of the rebuild in progress if there is one, otherwise
+        those of the finished index; 0 if there is neither."""
 
     def manifest(self) -> IndexManifest | None:
-        """What the index was built with, or None if it has never been built."""
+        """What the last finished rebuild used.
+
+        None if the index has never been built, or if a rebuild started and has not finished.
+        """
 
 
 class ChatModel(Protocol):
-    """Generates a reply from a prompt."""
+    """Generates a reply from a prompt, within a fixed context window of tokens."""
 
     @property
     def model_name(self) -> str: ...
 
-    def complete(self, *, system: str, user: str) -> str:
-        """The model's reply to one system and user message.
+    def complete(self, *, system: str, user: str) -> Completion:
+        """The model's reply to one system and user message, with its token counts.
 
-        Raises GenerationError for an error or an empty reply, and ModelUnavailableError
-        if the model can't be reached.
+        Nothing is ever cut off silently. Raises PromptTooLongError if the prompt does not
+        fit in the context window, and AnswerTooLongError if the reply reaches the answer
+        limit or the end of the context window. Raises GenerationError for any other error
+        or an empty reply, and ModelUnavailableError if the model can't be reached.
         """

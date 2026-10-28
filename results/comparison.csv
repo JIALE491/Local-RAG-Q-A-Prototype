@@ -1,0 +1,4 @@
+rule_rank,strategy,in_use,chunks,questions,hit_at_1,hit_at_3,hit_at_5,mean_reciprocal_rank,covered_at_3,covered_at_5
+1,sentences-300,no,240,50,44,48,49,0.9250,39,41
+2,fixed-300-50,no,241,50,43,48,50,0.9167,38,42
+3,sections-4000,yes,168,50,41,48,50,0.8880,44,48
